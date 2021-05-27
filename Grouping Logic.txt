@@ -1,0 +1,23 @@
+Fold 1	L1 container
+Fold 2	L2 container
+
+1	KUID
+2	KUID keyword
+3	Identifier keyword
+4	Numeric keyword
+5	Vector keyword
+6	String
+7	Path keyword
+8	Obsolete
+
+
+
+1	KUID
+2	L1 keyword (full)
+3	L1 keyword (prefix)
+4	L2 keyword (full)
+5	L2 keyword (prefix)
+6	Constant
+7	
+8	Obsolete
+
