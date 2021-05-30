@@ -6,17 +6,17 @@ This is a Notepad++ syntax highlighter for Trainz config files, based on a compr
 ### Syntax highlighting 
 Colors the contents of Trainz `config.txt` [according to their purposes or meaning](#colors-and-categories).
 
-![Syntax Highlighting](https://user-images.githubusercontent.com/12009110/120111102-e193f480-c170-11eb-818f-ab1194ad7cf5.png)
+![Syntax Highlighting](https://user-images.githubusercontent.com/12009110/120111811-ac3cd600-c173-11eb-996b-6960e20609c4.png)
 
 ### Autocomplete
 Notepad++ will display a pop-up list of keywords matching the characters you typed. This makes it easier for you to find keywords you don't remember exactly.
 
-![Autocomplete](https://user-images.githubusercontent.com/12009110/120111096-d9d45000-c170-11eb-9b2b-15f885636f26.png)
+![Autocomplete](https://user-images.githubusercontent.com/12009110/120111824-b3fc7a80-c173-11eb-86f8-033dc91679a0.png)
 
 ### Explanation and parameter info
 Once you typed or selected a supported keyword, type a bracket to display a so-called calltip, which will show a short summary of the keyword, the type of data to supply and, in some cases, will show a link to the Trainz Wiki for more information.
 
-![Calltip](https://user-images.githubusercontent.com/12009110/120111106-e658a880-c170-11eb-8465-04a9eb988735.png)
+![Calltip](https://user-images.githubusercontent.com/12009110/120111819-b068f380-c173-11eb-9033-7c3ab82e6466.png)
 
 Be aware of the [multipart-keyword issue](https://github.com/gusztavj/Trainz-Config-for-NotepadPlusPlus/issues/1), for which you won't currently receive calltips for keywords containing one or more dashes (such as `category-keyword`), or wrong calltip is displayed.
 
