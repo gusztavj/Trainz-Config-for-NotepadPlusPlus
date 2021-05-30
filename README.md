@@ -27,7 +27,7 @@ The syntax highlighter recognizes not only `config.txt` files, but files with `.
 Pretty simple:
 1. Grab the latest release from this page. 
    + If you download an XML file, save it to a location you remember.
-   + If you download a ZIP file, extract `Trainz Config Syntax.xml` from the archive, and save it to a location you remember.
+   + If you download a ZIP file, extract `Trainz Config Syntax.xml` and `Trainz Config Files.xml` from the archive, and save it to a location you remember.
 1. Copy `Trainz Config Syntax.xml` to `%APPDATA%\Notepad++\userDefineLangs\`
 1. Copy `Trainz Config Files.xml` to `<Notepad++ Installation Folder>\autoCompletion\`. That is, if Notepad++ is installed to `c:\Program Files (x86)\Notepad++`, copy the file to `c:\Program Files (x86)\Notepad++\autoCompletion`.
 1. Restart Notepad++ for the changes to take effect.
