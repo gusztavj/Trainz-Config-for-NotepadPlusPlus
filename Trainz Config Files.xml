@@ -1,0 +1,4182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NotepadPlus>
+	<AutoComplete language="Trainz Config Files">
+		<Environment ignoreCase="no" startFunc="(" stopFunc=")" paramSeparator="," terminal=";" additionalWordChars="-"/>
+		<KeyWord name="accel" func="yes">
+			<Overload retVal="" descr="Acceleration. First number is Gravity effect, second is wind effect.
+						Default is 0,0." >
+				<Param name="float gravityEffect" />
+				<Param name="float windEffect" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="achievements" func="yes">
+			<Overload retVal="" descr="The &quot;achievements&quot; subcontainer specifies a list of achievements contained
+						within this achievement group. https://online.ts2009.com/mediaWiki/index.php/KIND_Achievement-group" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="adhesion" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="adjust-cross-section-to-ground" func="yes">
+			<Overload retVal="" descr="If this boolean value is set (1), the track mesh
+						is distorted across its X axis to follow the ground
+						plane upon which it rests. If clear (0) the mesh
+						will assume the ground height from the center point. https://online.ts2009.com/mediaWiki/index.php/Track_Part_Container" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="adjust-height-to-ground-offset" func="yes">
+			<Overload retVal="" descr="Provides an offset along the model-space Z axis that
+						is used when a vertex is being adjusted to ground
+						height. https://online.ts2009.com/mediaWiki/index.php/Track_Part_Container" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="adjust-height-to-ground-threshold" func="yes">
+			<Overload retVal="" descr="Any vertex with a model-space Z value less than
+						this threshold number will be adjusted based on the height
+						of the ground under that vertex. https://online.ts2009.com/mediaWiki/index.php/Track_Part_Container" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="air-drag-coefficient" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="albedo-detail-texture" func="yes">
+			<Overload retVal="" descr="The &quot;albedo-detail-texture&quot; tag specifies a texture file 
+						located within the asset folder. See the discussion on the ground material below for
+						more information on how this image is utilized. https://online.ts2009.com/mediaWiki/index.php/KIND_Groundtexture" >
+				<Param name="filename" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="alias" func="yes">
+			<Overload retVal="" descr="Kuid of the asset to be referenced as a basis
+						for the new asset. For example TRS Traincars can reference
+						archived locomotive mesh assets for use with custom textures. This
+						process is done by aliasing the KUID of the archived
+						traincars." >
+				<Param name="kuid" />
+			</Overload>
+			<Overload retVal="" descr="The kuid of the paintshed template the paintshed reskin is
+						based on" >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="allowed-categories" func="yes">
+			<Overload retVal="" descr="The allowed product categories in this queue." >
+				<Param name="subcontainer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="allowed-products" func="yes">
+			<Overload retVal="" descr="The allowed products in this queue." >
+				<Param name="subcontainer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="allows-mixing" func="yes">
+			<Overload retVal="" descr="Products with this tag may be combined in a single
+						queue along with other products of the same category. Eg.
+						Lumber and 20ft Container on a flatcar. By default, allows-mixing is set to 0. 
+						Therefore by default, a queue will only allow one product-category at a time. To
+						look at allows-mixing from another angle, liquid products should
+						never have allows-mixing enabled. Otherwise you have the potential
+						to mix petrol with oil within the same tanker." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="altitude" func="yes">
+			<Overload retVal="" descr="Altitude of this region" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="always-controlled" func="yes">
+			<Overload retVal="" descr="Dunno https://online.ts2009.com/mediaWiki/index.php/KIND_MOSignal" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="always-load-in-global-context" func="yes">
+			<Overload retVal="" descr="If true, this library is always loaded to the global
+						script context. https://online.ts2009.com/mediaWiki/index.php/KIND_Library" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ambient" func="yes">
+			<Overload retVal="" descr="0 or 1, default 0 is off. Ambient sounds have
+						no 3D “position” and may be stereo. Non-ambient (positional) sounds are positioned
+						on the object and must be mono - see attachment above" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="amount" func="yes">
+			<Overload retVal="" descr="Amount required as input/output." >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="angle" func="yes">
+			<Overload retVal="" descr="Specifies the angles at which the turntable stops. Not used
+						if the turntable is set up as animation." >
+				<Param name="float list degrees" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="angles" func="yes">
+			<Overload retVal="" descr="Rotational boundaries in radians relative to its attachment point." >
+				<Param name="float list" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="anim" func="yes">
+			<Overload retVal="" descr="Reference to the animation file (.kin)" >
+				<Param name="[path/]filename.kin" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="animated-mesh" func="yes">
+			<Overload retVal="" descr="Animated mesh which changes as the queue becomes full." >
+				<Param name="mesh-table-ID" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="animation-loop-speed" func="yes">
+			<Overload retVal="" descr="This tag must be here if the asset is to
+						animate when placed. If this tag is not here when
+						placed the animation will not play by default, but may
+						play if controlled by script. A different value 
+						(e.g. 0.5, 2.0) may be used in the tag
+						to play the animation at a different speed from that
+						created in 3dsmax." >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="animdist" func="yes">
+			<Overload retVal="" descr="Leave this tag out if the bogey is not animated.
+						The distance traveled in meters by the bogeys in 1
+						second (30 frames) of animation. Bogey animations (exported from 3ds
+						Max) are called “anim.kin”." >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="asset-filename" func="yes">
+			<Overload retVal="" descr="Obsolete" >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="att" func="yes">
+			<Overload retVal="" descr="Attachment point (stored in the mesh file)" >
+				<Param name="helper" />
+			</Overload>
+			<Overload retVal="" descr="The mesh (and animation if present) is inserted at a
+						mesh attachment point rather than the origin (without this line
+						the mesh is placed relative to the origin of the
+						parent model)." >
+				<Param name="helper" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="att-parent" func="yes">
+			<Overload retVal="" descr="The tag tells Trainz in which mesh the attachment point
+						is located. The insertion attachment point is located within the
+						mesh ‘name’ , as listed in the config.txt." >
+				<Param name="mesh-table-ID" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="attached-splines" func="yes">
+			<Overload retVal="" descr="The &quot;attached-splines&quot; container provides a mechanism for having child splines attached
+						which follow the shape of this parent spline at a
+						slightly offset. https://online.ts2009.com/mediaWiki/index.php/KIND_Track" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="attached-track" func="yes">
+			<Overload retVal="" descr="Auto-generated spline track. Generated through attachment points located within
+						the default mesh. Attached-tracks update automatically to the spline
+						track connected to it. You may over-ride this auto-update 
+						feature by adding useadjoiningtracktype 0 Note. Correct track end
+						attachment orientation is essential. The Y axis must point ‘out’ 
+						at the correct angle. The Z axis must point ‘up’." >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="attached-trigger" func="yes">
+			<Overload retVal="" descr="A Trigger is a point along an attached track with
+						a specified radius. When a compatible rollingstock item enters this
+						radius it triggers a set of commands,controlled through its
+						script." >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="attachment" func="yes">
+			<Overload retVal="" descr="Attachment point on the object to which the sound is
+						attached. Default: The sound will attach to the origin of
+						parent object (not used for ambient sound)" >
+				<Param name="helper" />
+			</Overload>
+			<Overload retVal="" descr="The attachment point (stored in the mesh file) to place
+						the smoke effect." >
+				<Param name="helper" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="attachment-points" func="yes">
+			<Overload retVal="" descr="List of attachment points for this queue on which products
+						are visualised. (Use this, OR animated-mesh)" >
+				<Param name="subcontainer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="author" func="yes">
+			<Overload retVal="" descr="Author, contact-email and contact-website are useful information, 
+						particularly if a user has a question on your models or
+						would like to offer help or suggestions." >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="auto-create" func="yes">
+			<Overload retVal="" descr="The model is generated automatically when placed, or when you
+						load a map which includes the model. In some instances
+						you don’t want the mesh visible (as this may be controlled
+						through script). If auto-create is 0 the mesh will
+						not be visible when placed." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="autobrakecylinder" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="autobrakecylinder_start" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="autobrakecylindervent" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="autoname" func="yes">
+			<Overload retVal="" descr="When enabled, automatically assigns a unique name to this object
+						as it is placed." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="autopilotmode" func="yes">
+			<Overload retVal="" descr="AI driver setting. (off, on)" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="autosave" func="yes">
+			<Overload retVal="" descr="True if this session was generated by the surveyor auto-save 
+			process. https://online.ts2009.com/mediaWiki/index.php/KIND_Profile" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="auxreservoir" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="auxreservoir_autobrakecylinder" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="auxreservoir_no3" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="auxreservoir_start" func="yes">
+			<Overload retVal="" descr="Auxiliary reservoir pressure on loading the game." >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="auxreservoir_trainbrakepipe" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="auxreservoirvent" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="award-image" func="yes">
+			<Overload retVal="" descr="An image file (preferably .TGA, 512x512) to use as the
+						background for the default achievement granted html for this category.
+						Compulsory. https://online.ts2009.com/mediaWiki/index.php/KIND_Achievement-category" >
+				<Param name="filename" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="awarded-html" func="yes">
+			<Overload retVal="" descr="An .html file from the current asset, to be shown
+						to the user when the achievement is granted. This may
+						include a sub-path. This is optional - there is a
+						default grant HTML style should it not be present. https://online.ts2009.com/mediaWiki/index.php/Achievements_container" >
+				<Param name="filename" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="axle-count" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="axle-offsets" func="yes">
+			<Overload retVal="" descr="This tag identifies the distance in metres of each axle
+						location from the 'origin' of the bogie. The origin is the attachment point location.
+						This is currently used to calculate where, and how many,
+						axles the traincar has to play the 'turnout' sound effect. https://online.ts2009.com/mediaWiki/index.php/KIND_Bogey" >
+				<Param name="float list" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="backdrop" func="yes">
+			<Overload retVal="" descr="Specifies whether the object is treated as a backdrop or
+						not. (stays visible even when far from the camera)" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="backlength" func="yes">
+			<Overload retVal="" descr="Obsolete tag https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="backpivot" func="yes">
+			<Overload retVal="" descr="Obsolete tag https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bendy" func="yes">
+			<Overload retVal="" descr="Switches how track is bent on corners, set as 1
+						allows the mesh to be deformed as the spline is
+						bend around corners." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="blade-smallest-width" func="yes">
+			<Overload retVal="" descr="Number, minimum width of the head of the blade rail
+						in meters. https://online.ts2009.com/mediaWiki/index.php/KIND_Procedural_track" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="blade-taper-length" func="yes">
+			<Overload retVal="" descr="Number, length of the taper of the blade in meters.
+						https://online.ts2009.com/mediaWiki/index.php/KIND_Procedural_track" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bluestar_brake" func="yes">
+			<Overload retVal="" descr="Obsolete tag https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bluestar_coupler" func="yes">
+			<Overload retVal="" descr="Obsolete tag https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bluestar_multiple" func="yes">
+			<Overload retVal="" descr="Obsolete tag https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bluestar_shell" func="yes">
+			<Overload retVal="" descr="Obsolete tag https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bluestar_trainheat" func="yes">
+			<Overload retVal="" descr="Obsolete tag https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bluestar_walk" func="yes">
+			<Overload retVal="" descr="Obsolete tag https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bogey" func="yes">
+			<Overload retVal="" descr="The bogey KUID number (default for a.bog0 and a.bog1)" >
+				<Param name="kuid" />
+			</Overload>
+			<Overload retVal="" descr="The bogey to which this sound will apply." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bogey-0" func="yes">
+			<Overload retVal="" descr="The bogey KUID number for a.bog# (Used only if different to a.bog0)" >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bogey-0-r" func="yes">
+			<Overload retVal="" descr="Used instead of ‘bogey’ and bogey-1. The bogey will have reversed orientation. Note:
+						This will cause bogey animation to play in reverse unless
+						the attachment point for the bogey is also rotated 180
+						degrees in 3dmax." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bogey-1" func="yes">
+			<Overload retVal="" descr="The bogey KUID number for a.bog# (Used only if different to a.bog0)" >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bogey-1-r" func="yes">
+			<Overload retVal="" descr="Used instead of ‘bogey’ and bogey-1. The bogey will have reversed orientation. Note:
+						This will cause bogey animation to play in reverse unless
+						the attachment point for the bogey is also rotated 180
+						degrees in 3dmax." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bogey-2" func="yes">
+			<Overload retVal="" descr="The bogey KUID number for a.bog# (Used only if different to a.bog0)" >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bogey-2-r" func="yes">
+			<Overload retVal="" descr="Used instead of ‘bogey’ and bogey-1. The bogey will have reversed orientation. Note:
+						This will cause bogey animation to play in reverse unless
+						the attachment point for the bogey is also rotated 180
+						degrees in 3dmax." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bogey-3" func="yes">
+			<Overload retVal="" descr="The bogey KUID number for a.bog# (Used only if different to a.bog0)" >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bogey-3-r" func="yes">
+			<Overload retVal="" descr="Used instead of ‘bogey’ and bogey-1. The bogey will have reversed orientation. Note:
+						This will cause bogey animation to play in reverse unless
+						the attachment point for the bogey is also rotated 180
+						degrees in 3dmax." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bogey-4" func="yes">
+			<Overload retVal="" descr="The bogey KUID number for a.bog# (Used only if different to a.bog0)" >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bogey-4-r" func="yes">
+			<Overload retVal="" descr="Used instead of ‘bogey’ and bogey-1. The bogey will have reversed orientation. Note:
+						This will cause bogey animation to play in reverse unless
+						the attachment point for the bogey is also rotated 180
+						degrees in 3dmax." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bogey-5" func="yes">
+			<Overload retVal="" descr="The bogey KUID number for a.bog# (Used only if different to a.bog0)" >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bogey-5-r" func="yes">
+			<Overload retVal="" descr="Used instead of ‘bogey’ and bogey-1. The bogey will have reversed orientation. Note:
+						This will cause bogey animation to play in reverse unless
+						the attachment point for the bogey is also rotated 180
+						degrees in 3dmax." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bogey-6" func="yes">
+			<Overload retVal="" descr="The bogey KUID number for a.bog# (Used only if different to a.bog0)" >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bogey-6-r" func="yes">
+			<Overload retVal="" descr="Used instead of ‘bogey’ and bogey-1. The bogey will have reversed orientation. Note:
+						This will cause bogey animation to play in reverse unless
+						the attachment point for the bogey is also rotated 180
+						degrees in 3dmax." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bogey-7" func="yes">
+			<Overload retVal="" descr="The bogey KUID number for a.bog# (Used only if different to a.bog0)" >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bogey-7-r" func="yes">
+			<Overload retVal="" descr="Used instead of ‘bogey’ and bogey-1. The bogey will have reversed orientation. Note:
+						This will cause bogey animation to play in reverse unless
+						the attachment point for the bogey is also rotated 180
+						degrees in 3dmax." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bogey-8" func="yes">
+			<Overload retVal="" descr="The bogey KUID number for a.bog# (Used only if different to a.bog0)" >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bogey-8-r" func="yes">
+			<Overload retVal="" descr="Used instead of ‘bogey’ and bogey-1. The bogey will have reversed orientation. Note:
+						This will cause bogey animation to play in reverse unless
+						the attachment point for the bogey is also rotated 180
+						degrees in 3dmax." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bogey-9" func="yes">
+			<Overload retVal="" descr="The bogey KUID number for a.bog# (Used only if different to a.bog0)" >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bogey-9-r" func="yes">
+			<Overload retVal="" descr="Used instead of ‘bogey’ and bogey-1. The bogey will have reversed orientation. Note:
+						This will cause bogey animation to play in reverse unless
+						the attachment point for the bogey is also rotated 180
+						degrees in 3dmax." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bogey-r" func="yes">
+			<Overload retVal="" descr="Used instead of ‘bogey’ and bogey-1. The bogey will have reversed orientation. Note:
+						This will cause bogey animation to play in reverse unless
+						the attachment point for the bogey is also rotated 180
+						degrees in 3dmax." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bogeys" func="yes">
+			<Overload retVal="" descr="The bogey container stores the bogeys used for the loco\rollingstock item." >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="boiler-to-piston-flow" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="boiler-volume" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="brakefull" func="yes">
+			<Overload retVal="" descr="Brake pipe pressure in grams/m³ after full service reduction (for self lapping brakes)." >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="brakeinitial" func="yes">
+			<Overload retVal="" descr="Brake pipe pressure in grams/m³ after initial service reduction (for self lapping brakes)." >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="brakepipe" func="yes">
+			<Overload retVal="" descr="Brake pipe pressure in grams/m³ when fully charged." >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="brakeratio" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bridgetrack" func="yes">
+			<Overload retVal="" descr="Kuid of the track type to be used." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="buffer-speed" func="yes">
+			<Overload retVal="" descr="Used for buffers; specifies the maximum speed up to which
+						the buffer will stop a train." >
+				<Param name="float metres/second" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="building-#" func="yes">
+			<Overload retVal="" descr="A KIND Buildable asset should contain this following named entry
+						in its mesh-table https://online.ts2009.com/mediaWiki/index.php/KIND_Buildable" >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="building-cost" func="yes">
+			<Overload retVal="" descr="A KIND Buildable asset should contain this following named entry
+						in its mesh-table https://online.ts2009.com/mediaWiki/index.php/KIND_Buildable" >
+				<Param name="subcontainer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="burn-rate" func="yes">
+			<Overload retVal="" descr="How much coal in kg/s is consumed when the loco is operating at the
+						test parameters" >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="burn-rate-idle" func="yes">
+			<Overload retVal="" descr="How much coal in kg/s is consumed when the loco is idle, purely to
+						keep the fire burning" >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="cabin-visible-from-outside" func="yes">
+			<Overload retVal="" descr="If true, makes the cab mesh visible from the outside
+						view. https://online.ts2009.com/mediaWiki/index.php/KIND_Interior" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="cabin_muffle" func="yes">
+			<Overload retVal="" descr="Amount that the enginesound volume should be reduced to when
+						in-cab. https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="cabinsway" func="yes">
+			<Overload retVal="" descr="Cabin sway multiplier. Eg -2." >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="camera0" func="yes">
+			<Overload retVal="" descr="A camera contains 5 numeric coordinates that determine the placement
+						and orientation of the camera. 
+						These are: 0,0,0,0,0=left/right, front/back, up/down, yaw, pitch.
+						To determine these variables add -freeintcam to
+						the trainzoptions.txt. Pan around the interior using arrow keys
+						and mouse. Co-ordinates are displayed at bottom-left of
+						screen." >
+				<Param name="float leftRight" />
+				<Param name="float frontBack" />
+				<Param name="float upDown" />
+				<Param name="float yaw" />
+				<Param name="float pitch" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="camera1" func="yes">
+			<Overload retVal="" descr="A camera contains 5 numeric coordinates that determine the placement
+						and orientation of the camera. 
+						These are: 0,0,0,0,0=left/right, front/back, up/down, yaw, pitch.
+						To determine these variables add -freeintcam to
+						the trainzoptions.txt. Pan around the interior using arrow keys
+						and mouse. Co-ordinates are displayed at bottom-left of
+						screen." >
+				<Param name="float leftRight" />
+				<Param name="float frontBack" />
+				<Param name="float upDown" />
+				<Param name="float yaw" />
+				<Param name="float pitch" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="camera2" func="yes">
+			<Overload retVal="" descr="A camera contains 5 numeric coordinates that determine the placement
+						and orientation of the camera. 
+						These are: 0,0,0,0,0=left/right, front/back, up/down, yaw, pitch.
+						To determine these variables add -freeintcam to
+						the trainzoptions.txt. Pan around the interior using arrow keys
+						and mouse. Co-ordinates are displayed at bottom-left of
+						screen." >
+				<Param name="float leftRight" />
+				<Param name="float frontBack" />
+				<Param name="float upDown" />
+				<Param name="float yaw" />
+				<Param name="float pitch" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="camera3" func="yes">
+			<Overload retVal="" descr="A camera contains 5 numeric coordinates that determine the placement
+						and orientation of the camera. 
+						These are: 0,0,0,0,0=left/right, front/back, up/down, yaw, pitch.
+						To determine these variables add -freeintcam to
+						the trainzoptions.txt. Pan around the interior using arrow keys
+						and mouse. Co-ordinates are displayed at bottom-left of
+						screen." >
+				<Param name="float leftRight" />
+				<Param name="float frontBack" />
+				<Param name="float upDown" />
+				<Param name="float yaw" />
+				<Param name="float pitch" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="cameradefault" func="yes">
+			<Overload retVal="" descr="The in-cab camera view Trainz defaults to when entering
+						the cab." >
+				<Param name="integer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="cameralist" func="yes">
+			<Overload retVal="" descr="List of camera viewpoints" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="car#" func="yes">
+			<Overload retVal="" descr="A container for car details. # is a number from 0 to one less than the
+						number of cars. https://online.ts2009.com/mediaWiki/index.php/KIND_Consist" >
+				<Param name="subcontainer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="car-dir" func="yes">
+			<Overload retVal="" descr="A number to indicate the direction in which the car
+						should face. https://online.ts2009.com/mediaWiki/index.php/KIND_Consist" >
+				<Param name="integer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="car-kuid" func="yes">
+			<Overload retVal="" descr="The KUID of the traincar at this position in the
+						consist. https://online.ts2009.com/mediaWiki/index.php/KIND_Consist" >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="car-num" func="yes">
+			<Overload retVal="" descr="The ordinal position of this traincar in the consist https://online.ts2009.com/mediaWiki/index.php/KIND_Consist" >
+				<Param name="integer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="car0" func="yes">
+			<Overload retVal="" descr="Each of these tags stores the kuid of a car
+						to be used on the roads." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="car1" func="yes">
+			<Overload retVal="" descr="Each of these tags stores the kuid of a car
+						to be used on the roads." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="car2" func="yes">
+			<Overload retVal="" descr="Each of these tags stores the kuid of a car
+						to be used on the roads." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="car3" func="yes">
+			<Overload retVal="" descr="Each of these tags stores the kuid of a car
+						to be used on the roads." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="car4" func="yes">
+			<Overload retVal="" descr="Each of these tags stores the kuid of a car
+						to be used on the roads." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="car5" func="yes">
+			<Overload retVal="" descr="Each of these tags stores the kuid of a car
+						to be used on the roads." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="car6" func="yes">
+			<Overload retVal="" descr="Each of these tags stores the kuid of a car
+						to be used on the roads." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="car7" func="yes">
+			<Overload retVal="" descr="Each of these tags stores the kuid of a car
+						to be used on the roads." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="car8" func="yes">
+			<Overload retVal="" descr="Each of these tags stores the kuid of a car
+						to be used on the roads." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="car9" func="yes">
+			<Overload retVal="" descr="Each of these tags stores the kuid of a car
+						to be used on the roads." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="carrate" func="yes">
+			<Overload retVal="" descr="No longer Valid. Defined traffic density on road (minimum seconds
+						between each car generated). 0 = No traffic. Number must be greater than 3." >
+				<Param name="float seconds" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="casts_shadows" func="yes">
+			<Overload retVal="" descr="Toggles whether the shadow model is displayed." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="category" func="yes">
+			<Overload retVal="" descr="The achievement-category asset for this achievement. Achievement categories are
+						used to group achievements together in the user interface. https://online.ts2009.com/mediaWiki/index.php/Achievements_container" >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="category-class" func="yes">
+			<Overload retVal="" descr="The class code for this asset." >
+				<Param name="class code" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="category-era" func="yes">
+			<Overload retVal="" descr="Era code list." >
+				<Param name="era code" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="category-era-0" func="yes">
+			<Overload retVal="" descr="Era code." >
+				<Param name="era list" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="category-era-1" func="yes">
+			<Overload retVal="" descr="Era code." >
+				<Param name="era list" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="category-era-2" func="yes">
+			<Overload retVal="" descr="Era code." >
+				<Param name="era list" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="category-era-3" func="yes">
+			<Overload retVal="" descr="Era code." >
+				<Param name="era list" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="category-era-4" func="yes">
+			<Overload retVal="" descr="Era code." >
+				<Param name="era list" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="category-era-5" func="yes">
+			<Overload retVal="" descr="Era code." >
+				<Param name="era list" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="category-keywords" func="yes">
+			<Overload retVal="" descr="Keyword list" >
+				<Param name="keyword list" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="category-region" func="yes">
+			<Overload retVal="" descr="A list of REGION codes or REGION GROUP codes," >
+				<Param name="region list" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="category-region-0" func="yes">
+			<Overload retVal="" descr="A REGION code or REGION GROUP code." >
+				<Param name="region code" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="category-region-1" func="yes">
+			<Overload retVal="" descr="A REGION code or REGION GROUP code." >
+				<Param name="region code" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="category-region-2" func="yes">
+			<Overload retVal="" descr="A REGION code or REGION GROUP code." >
+				<Param name="region code" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="category-region-3" func="yes">
+			<Overload retVal="" descr="A REGION code or REGION GROUP code." >
+				<Param name="region code" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="category-region-4" func="yes">
+			<Overload retVal="" descr="A REGION code or REGION GROUP code." >
+				<Param name="region code" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="category-region-5" func="yes">
+			<Overload retVal="" descr="A REGION code or REGION GROUP code." >
+				<Param name="region code" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="changeability" func="yes">
+			<Overload retVal="" descr="Propensity for weather to change. (none, periodic, extreme)" >
+				<Param name="0/1/2" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="check-gauge" func="yes">
+			<Overload retVal="" descr="Number, distance between the inside face of one running rail,
+						and the outside face of the check rail positioned next
+						to the other running rail in meters. https://online.ts2009.com/mediaWiki/index.php/KIND_Procedural_track" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="checkrail-body-length" func="yes">
+			<Overload retVal="" descr="Number, length of the ‘body’ section of the check rail in meters. This is the
+						straight part, not including the flared ends. https://online.ts2009.com/mediaWiki/index.php/KIND_Procedural_track" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="chunky_info" func="yes">
+			<Overload retVal="" descr="These values (in metres) define the shape of the mesh
+						created for the track." >
+				<Param name="float list" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="chunky_mesh" func="yes">
+			<Overload retVal="" descr="Name of texture to apply to rail. The texture must
+						be within a directory of the same name (ie. “textureName\textureName.texture.txt”). The chunky_mesh value will simply be the name of this
+						directory (ie. “textureName”)." >
+				<Param name="folder" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="class" func="yes">
+			<Overload retVal="" descr="This refers to the class of asset within the script
+						file (the class must match that stated in the script)." >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="classification-signals" func="yes">
+			<Overload retVal="" descr="Lists the supported classification signals. https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="clutter-mesh" func="yes">
+			<Overload retVal="" descr="Ground textures can now reference a mesh and insert the
+						mesh automatically as the ground is painted. Painting over a
+						clutter-mesh ground texture effectively deletes clutter meshes and texture.
+						The mesh it refers to is can be standard scenery
+						object kind mesh. Clutter-meshes must have only one Max
+						material assigned to it only. Polycounts must be very low." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="collate-meshes" func="yes">
+			<Overload retVal="" descr="Enables clutter-mesh support (eg. fast trees)" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="collision-parent" func="yes">
+			<Overload retVal="" descr="For collision-proxy meshes in an interior mesh-table, this
+						specifies the parent object to be proxied. is 3." >
+				<Param name="mesh-table-ID" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="color" func="yes">
+			<Overload retVal="" descr="The R,G,B color value of the effect." >
+				<Param name="rgb value" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="company" func="yes">
+			<Overload retVal="" descr="The Locomotive or car owner" >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="compressor" func="yes">
+			<Overload retVal="" descr="Compressor maximum pressure in grams/m³" >
+				<Param name="decimal" />
+			</Overload>
+			<Overload retVal="" descr="Flowsize of the compressor" >
+				<Param name="integer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="conditions" func="yes">
+			<Overload retVal="" descr="The conditions container lists the conditions required to achieve this
+						achievement. https://online.ts2009.com/mediaWiki/index.php/Achievements_container" >
+				<Param name="subcontainer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="conesize" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="conflicts-with queues" func="yes">
+			<Overload retVal="" descr="This queue and the conflicting queue(s) cannot be used
+						simultaneously." >
+				<Param name="subcontainer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="consist-list" func="yes">
+			<Overload retVal="" descr=" A container for car containers. Each car container describes one
+						car of the consist. https://online.ts2009.com/mediaWiki/index.php/KIND_Consist" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="consists" func="yes">
+			<Overload retVal="" descr="The consists tag stores information on consists that can be
+						generated by the industry." >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="contact-email" func="yes">
+			<Overload retVal="" descr="Author, contact-email and contact-website are useful information, particularly
+						if a user has a question on your models or
+						would like to offer help or suggestions." >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="contact-website" func="yes">
+			<Overload retVal="" descr="Author, contact-email and contact-website are useful information, particularly
+						if a user has a question on your models or
+						would like to offer help or suggestions." >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="context" func="yes">
+			<Overload retVal="" descr="A semicolon separated list of contexts under which the control
+						should be active, as follows: https://online.ts2009.com/mediaWiki/index.php/Controls_container" >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="controlmethod" func="yes">
+			<Overload retVal="" descr="Driver control setting. (dcc, cabin)" >
+				<Param name="0/1" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="controls" func="yes">
+			<Overload retVal="" descr="The controls container is a top-level config.txt file
+						entry used by controlset assets. https://online.ts2009.com/mediaWiki/index.php/Controls_container" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="controlset" func="yes">
+			<Overload retVal="" descr="Specifies a controlset asset used to send script messages to
+						this interiors custom script. Optional. https://online.ts2009.com/mediaWiki/index.php/KIND_Interior" >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="coordinate-transformation" func="yes">
+			<Overload retVal="" descr="The coordinate-transformation setting determines how vertices from the model
+						are mapped into the world. https://online.ts2009.com/mediaWiki/index.php/Track_Part_Container" >
+				<Param name="enumerated string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="corona" func="yes">
+			<Overload retVal="" descr="Path to th corona image file for the given light
+						https://online.ts2009.com/mediaWiki/index.php/KIND_MOSignal" >
+				<Param name="filename" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="coupling-mask" func="yes">
+			<Overload retVal="" descr="Coupling mask that applies to the consist. 0 will block
+						off all coupling activity while “1” will mean you can couple with a vehicle." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="critical-animation" func="yes">
+			<Overload retVal="" descr="When enabled, this forces the animation to continue playing when
+						off screen. Impacts performance when enabled." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="custom-attachments" func="yes">
+			<Overload retVal="" descr="Not used." >
+				<Param name="N/A" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="custom-category-list" func="yes">
+			<Overload retVal="" descr="A list of custom category identifiers, separated by semi-colons (';'). 
+						Each custom category identifier should be a short (eg. 3-6 character) 
+						alphanumeric token. No other characters (including whitespace) should
+						be present in the string. These custom categories are used
+						to enable scripts to rapidly locate certain classes of asset.
+						It is strongly recommended that new custom category identifiers are
+						introduced sparingly. The custom-category-list tag value may have
+						no more than 64 characters total. This tag should be
+						left blank unless there is an existing specific script requirement
+						that can only be fulfilled via the custom-category-list
+						approach. https://online.ts2009.com/mediaWiki/index.php/KIND_Track" >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="decal" func="yes">
+			<Overload retVal="" descr="Specifies a decal to attach to the scenery object. https://online.ts2009.com/mediaWiki/index.php/%22decal%22_Container" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="decoupling-mask" func="yes">
+			<Overload retVal="" descr="Coupling mask that applies to the consist. 0 will mean
+						you can’t decouple vehicles in the train while 1 means you
+						can decouple vehicles." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="default" func="yes">
+			<Overload retVal="" descr="A KIND Buildable asset should contain this following named entry
+						in its mesh-table https://online.ts2009.com/mediaWiki/index.php/KIND_Buildable" >
+				<Param name="kuid" />
+			</Overload>
+			<Overload retVal="" descr="Main mesh of the asset" >
+				<Param name="subcontainer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="default-keys" func="yes">
+			<Overload retVal="" descr="&quot;A comma separated list of the default key binds
+						to map to this control. If multiple keys are required
+						for a single bind, separate them with a space, e.g. &quot;shift n&quot;. 
+						Note: Trainz will only automatically map default key bindings
+						for builtin content. Nonetheless, it is recommended that content creators
+						use this field to provide &quot;suggested&quot; default bindings where appropriate.&quot; https://online.ts2009.com/mediaWiki/index.php/Controls_container" >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="default-mesh" func="yes">
+			<Overload retVal="" descr="The KUID of the attached mesh." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="default-night" func="yes">
+			<Overload retVal="" descr="‘Main’ night window mesh on scenery and industry and traincar assets.
+						Modeled to the same 3d space as the default mesh
+						and is inserted at the default mesh origin." >
+				<Param name="subcontainer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="default-night-forward" func="yes">
+			<Overload retVal="" descr="The name for a submesh attached to a locomotive, to
+						show a beam of light for example, in the direction
+						of movement of the locomotive. Trainz recognises the name and
+						turns on the correct mesh depending on the running direction." >
+				<Param name="subcontainer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="default-night-reverse" func="yes">
+			<Overload retVal="" descr="The name for a submesh attached to a locomotive, to
+						show a beam of light for example, in the direction
+						of movement of the locomotive. Trainz recognises the name and
+						turns on the correct mesh depending on the running direction." >
+				<Param name="subcontainer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="defaultjunction" func="yes">
+			<Overload retVal="" descr="Default type of junction in this region." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="deraillevel" func="yes">
+			<Overload retVal="" descr="Derail setting. (none, arcade, realistic)" >
+				<Param name="36527" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="desc-token" func="yes">
+			<Overload retVal="" descr="The name of a string table entry with the user
+						visible description of the control in it. This string table
+						entry will be used in the Trainz user interface to
+						give detail to the user about the control. It should
+						be fairly short. Optional. https://online.ts2009.com/mediaWiki/index.php/Controls_container" >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="description" func="yes">
+			<Overload retVal="" descr="Description of the asset." >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="description-##" func="yes">
+			<Overload retVal="" descr="Translated description of the asset." >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="detailtexturescale" func="yes">
+			<Overload retVal="" descr="The detailtexturescale tag specifies a scaling value to use for
+						the detail textures relative to the primary texture coordinates. 
+						1.0 means that the detail texture uses the same mapping
+						as the primary texture (which is basically pointless) while numbers
+						below 1.0 mean that the detail texture is mapped
+						over a larger area at lower texel resolution, and numbers
+						above 1.0 mean that the detail texture is mapped
+						over a smaller area with higher texel resolution. This tag
+						is only relevant where detail textures are in use. https://online.ts2009.com/mediaWiki/index.php/KIND_Groundtexture" >
+				<Param name="filename" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="diffuse-texture" func="yes">
+			<Overload retVal="" descr="The &quot;diffuse-texture&quot; tag specifies a texture file located within the asset
+						folder. See the discussion on the ground material below for
+						more information on how this image is utilized. https://online.ts2009.com/mediaWiki/index.php/KIND_Groundtexture" >
+				<Param name="filename" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="dighole" func="yes">
+			<Overload retVal="" descr="Specifies the number of grid segments (length, width) to be
+						removed from the surveyor grid to accommodate the turntable pit." >
+				<Param name="float length" />
+				<Param name="float width" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="direct-drive" func="yes">
+			<Overload retVal="" descr="When direct-drive is present, the bogey animation is linked
+						to the steam piston and physics system. If this tag
+						is not included the piston and steam sounds will not
+						work!" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="direction" func="yes">
+			<Overload retVal="" descr="The vector at which the smoke travels." >
+				<Param name="vector" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="directional" func="yes">
+			<Overload retVal="" descr="The default for coronas is to be aligned to the
+						attachment point to face the NEGATIVE Z direction. This is
+						especially useful for Traincars." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="disable-extra-track-sounds" func="yes">
+			<Overload retVal="" descr="Disables the “click-clack” tracksounds. (0, 1)" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="displacement-bitmap" func="yes">
+			<Overload retVal="" descr="Greyscale bitmap used to define the height adjustment to be
+						applied. Note that this is an image filename, not a
+						texture. 8-bit BMP or PNG format is suitable. A
+						RGB file format (eg, 24-bit PNG)can also be
+						used, but the colour information is converted to greyscale and
+						the results might not be correct. The pixel values in
+						the image are used to determine the amount of height
+						adjustment: values greater than 127 are height increases, values less
+						than 127 are height decreases. https://online.ts2009.com/mediaWiki/index.php/KIND_Groundbrush" >
+				<Param name="filename" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="display-time" func="yes">
+			<Overload retVal="" descr="Specifies the time of day the effect is in use,
+						with the lowest value being 0 (midnight) and the highest
+						value being 24 (midnight). https://online.ts2009.com/mediaWiki/index.php/Classification-signals_container" >
+				<Param name="Pair of flow" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="distance" func="yes">
+			<Overload retVal="" descr="2 numbers (meters) 1st number is the distance at which
+						the sound is played 100% 2nd number is the cut-off distance. Doesn’t affect the volume of the sound (Default: 50m, 150m)" >
+				<Param name="float minMetres" />
+				<Param name="float maxMetres" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="distant" func="yes">
+			<Overload retVal="" descr="I guess it's 1 (true) for distant signals https://online.ts2009.com/mediaWiki/index.php/KIND_MOSignal" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ditch_color" func="yes">
+			<Overload retVal="" descr="RGB ditch light color. Eg. 255,255,255." >
+				<Param name="rgb value" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="divider" func="yes">
+			<Overload retVal="" descr="Name of the model to use as the middle bridge
+						section. Placed in subfolder with same name." >
+				<Param name="folder" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="domain" func="yes">
+			<Overload retVal="" descr="Restricts connections to a specific domain https://online.ts2009.com/mediaWiki/index.php/Socket-template-list_Container" >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="dont-scale-mesh-to-fit-length" func="yes">
+			<Overload retVal="" descr="If this boolean value is clear (0), the length of
+						each component mesh is scaled to fit the available area
+						in the spline. Since the number of repeats and subdivisions
+						is integer, spline meshes are typically stretched or contracted slightly
+						to ensure that the mesh repeats end-to-end. If
+						set (1), the mesh is rendered at its natural length,
+						even if this means that meshes will overlap or stretch
+						apart and not touch each other. This might typically used
+						where a spline represents a set of repeating poles or
+						pylons, rather than a continuous beam. It is also commonly
+						used for the spline endcaps, which are often modelled to
+						a fixed size and should not be stretched or contracted.
+						https://online.ts2009.com/mediaWiki/index.php/Track_Part_Container" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="don’t-flip-terminator" func="yes">
+			<Overload retVal="" descr="Terminator model isn’t mirrored on one side." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="double-blocking" func="yes">
+			<Overload retVal="" descr="Dunno https://online.ts2009.com/mediaWiki/index.php/KIND_MOSignal" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="driver" func="yes">
+			<Overload retVal="" descr="A value of the context tag for a control container.
+						Key will activate while in Driver, regardless of control mode
+						https://online.ts2009.com/mediaWiki/index.php/Controls_container" >
+				<Param name="value for enum" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="driver-cab" func="yes">
+			<Overload retVal="" descr="A value of the context tag for a control container.
+						Key will activate while in Driver, while in Cab control
+						mode with a diesel/electric loco https://online.ts2009.com/mediaWiki/index.php/Controls_container" >
+				<Param name="value for enum" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="driver-cab-steam" func="yes">
+			<Overload retVal="" descr="A value of the context tag for a control container.
+						https://online.ts2009.com/mediaWiki/index.php/Controls_container" >
+				<Param name="value for enum" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="driver-dcc" func="yes">
+			<Overload retVal="" descr="A value of the context tag for a control container.
+						Key will activate while in Driver, while in DCC control
+						mode https://online.ts2009.com/mediaWiki/index.php/Controls_container" >
+				<Param name="value for enum" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="driver-settings" func="yes">
+			<Overload retVal="" descr="Specify the settings of this scenario, similar to Driver’s settings screen" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="duration" func="yes">
+			<Overload retVal="" descr="Length of time (in seconds) that the process runs for." >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="dynamic-brake" func="yes">
+			<Overload retVal="" descr="A sequence of numeric subcontainer data structures referring to a
+						specific throttle notch and specifying the speed (m/s) and a braking force (kN) value which together define
+						a braking force graph for that throttle notch" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="edit-after-add" func="yes">
+			<Overload retVal="" descr="A value of properties-behavior tag of drivercommand assets. The
+						command prefers to be edited in a popover after the
+						instance is created. This should be used where there are
+						multiple options to specify, or where the number of possible
+						choices is large. https://online.ts2009.com/mediaWiki/index.php/KIND_Enginesound" >
+				<Param name="value for enum" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="edit-in-submenu" func="yes">
+			<Overload retVal="" descr="A value of properties-behavior tag of drivercommand assets. The
+						command prefers to show a submenu before the instance is
+						created, controlling the initial configuration of the command instance. This
+						should be used where there is only a single option
+						to specify, where there are only a small number of
+						choices for that option, and where a default selection would
+						be inappropriate. https://online.ts2009.com/mediaWiki/index.php/KIND_Enginesound" >
+				<Param name="value for enum" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="effect" func="yes">
+			<Overload retVal="" descr="Specifies the mesh-table 'effect' entry to be used for the classification signal or tail
+						light. https://online.ts2009.com/mediaWiki/index.php/Classification-signals_container" >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="effects" func="yes">
+			<Overload retVal="" descr="Optional mesh-table variations" >
+				<Param name="subcontainer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="enable-pfx-collisions" func="yes">
+			<Overload retVal="" descr="Defines whether or not this mesh object should be used
+						for collision detection against particles (e.g. smoke, steam). Disabling
+						it for objects that are unlikely to interact with particles
+						is a good idea. https://online.ts2009.com/mediaWiki/index.php/KIND_Mesh" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="enable-shadows-in-cab" func="yes">
+			<Overload retVal="" descr="If true (1), makes the cab interior receive shadows. https://online.ts2009.com/mediaWiki/index.php/KIND_Interior" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="enabled" func="yes">
+			<Overload retVal="" descr="Specifies whether the effect is enabled." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="end-gap" func="yes">
+			<Overload retVal="" descr="Defines the distance in meters between the end of the
+						child's geometry and the end of the spline, as measured
+						along the path of the spline. https://online.ts2009.com/mediaWiki/index.php/%22attached-splines%22_container" >
+				<Param name="integer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="endcap-next" func="yes">
+			<Overload retVal="" descr="The &quot;endcap-prev&quot; and &quot;endcap-next&quot; tags are specified in the same way as &quot;track&quot;, but are not compulsory. If present, these end caps
+						are inserted past the ends of the spline in each
+						direction unless the spline flows onto another spline segment of
+						the same asset. https://online.ts2009.com/mediaWiki/index.php/KIND_Track" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="endcap-outside-spline" func="yes">
+			<Overload retVal="" descr="If this boolean value is set (default, 1) on an
+						endcap, then the endcap geometry exists beyond the spline. If
+						this boolean value is clear (0) then the spline geometry
+						is inset by the length of the endcap and the
+						endcap resides within the spline. https://online.ts2009.com/mediaWiki/index.php/Track_Part_Container" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="endcap-prev" func="yes">
+			<Overload retVal="" descr="The &quot;endcap-prev&quot; and &quot;endcap-next&quot; tags are specified in the same way as &quot;track&quot;, but are not compulsory. If present, these end caps
+						are inserted past the ends of the spline in each
+						direction unless the spline flows onto another spline segment of
+						the same asset. https://online.ts2009.com/mediaWiki/index.php/KIND_Track" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="endcolor" func="yes">
+			<Overload retVal="" descr="The final color the smoke effect shifts to." >
+				<Param name="rgb value" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="endlength" func="yes">
+			<Overload retVal="" descr="Length in meters of the initiator and terminator models." >
+				<Param name="float metres" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="engine" func="yes">
+			<Overload retVal="" descr="States type of traincar. 0 for Rolling stock, 1 for
+						Locomotive." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="engine-sound-ramp-down-durations" func="yes">
+			<Overload retVal="" descr="&quot;Sets the duration of play of each of the
+						8 soundfiles, &quot;stop.wav&quot; and &quot;down 2 - 1.wav&quot; to &quot;down 8 - 7.wav&quot; files. Value must not be greater than the duration
+						of the corresponding sound file. If there is no &quot;stop.wav&quot; then enter 0 as the first number in the
+						set.&quot; https://online.ts2009.com/mediaWiki/index.php/KIND_Enginesound" >
+				<Param name="list of integers" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="engine-sound-ramp-duration" func="yes">
+			<Overload retVal="" descr="Sets the duration of play of all up and down
+						ramp sounds. All ramp sound files should be the same
+						duration to use this tag. https://online.ts2009.com/mediaWiki/index.php/KIND_Enginesound" >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="engine-sound-ramp-up-durations" func="yes">
+			<Overload retVal="" descr="&quot;Sets the duration of play of each of the
+						8 soundfiles, &quot;start.wav&quot; and &quot;up 1 - 2.wav&quot; to &quot;up 7 - 8.wav&quot; files. Value must not be greater than the duration
+						of the corresponding sound file. If there is no &quot;start.wav&quot; then enter 0 as the first number in the
+						set.&quot; https://online.ts2009.com/mediaWiki/index.php/KIND_Enginesound" >
+				<Param name="list of integers" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="enginesound" func="yes">
+			<Overload retVal="" descr="References the KUID number for the traincar’s sound." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="enginespec" func="yes">
+			<Overload retVal="" descr="References the engine KUID number. This specifies the driver physics
+						boundaries for the traincar." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="epreservoirpipe" func="yes">
+			<Overload retVal="" descr="For electro pneumatic braking. Not currently in use, generally leave
+						this setting" >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="epreservoirpipe_autobrakecylinder" func="yes">
+			<Overload retVal="" descr="Flowsize of the electro pneumatic automatic brake cylinder reservoir." >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="epreservoirpipe_start" func="yes">
+			<Overload retVal="" descr="For electro pneumatic braking. Not currently in use, generally leave
+						this setting." >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="equaliser" func="yes">
+			<Overload retVal="" descr="Equalising reservoir volume." >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="equaliser_mainreservoir" func="yes">
+			<Overload retVal="" descr="Flowsize of the equaliser main reservoir" >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="equaliser_start" func="yes">
+			<Overload retVal="" descr="Equalising Reservoir pressure on loading Trainz" >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="equaliservent" func="yes">
+			<Overload retVal="" descr="Flowsize of the equaliser vent" >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="equaliserventemergency" func="yes">
+			<Overload retVal="" descr="Flowsize of the emergency equaliser vent" >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="equaliserventhandleoff" func="yes">
+			<Overload retVal="" descr="Flowsize of the equaliser to the atmosphere when in the &quot;handle off&quot; position" >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="event" func="yes">
+			<Overload retVal="" descr="The name of the event to trigger when the control
+						is triggered. A script message of the format (&quot;ControlSet&quot;, &lt;event&gt;) will be posted to any linked library or interior
+						asset (library/interior assets can specify a control set using the &quot;controlset&quot; tag). If the 'trigger-on-up' tag is set to true 'Message.minor' will be set to &quot;&lt;event&gt;-up&quot; when the key is released. https://online.ts2009.com/mediaWiki/index.php/Controls_container" >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="extensions" func="yes">
+			<Overload retVal="" descr="Asset specific data." >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="face-texture" func="yes">
+			<Overload retVal="" descr="This is the driver icon used in TRS. Must be
+						64x64 pixels" >
+				<Param name="[path/]filename.texture" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="faces" func="yes">
+			<Overload retVal="" descr="The direction the smoke effect faces." >
+				<Param name="camera/motion/down" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="facing" func="yes">
+			<Overload retVal="" descr="Indicates the direction of the vehicle." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="field-of-view" func="yes">
+			<Overload retVal="" descr="X and Y Field Of View for perspective projection. https://online.ts2009.com/mediaWiki/index.php/%22decal%22_Container" >
+				<Param name="Pair of decimals" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="file" func="yes">
+			<Overload retVal="" descr="The twinkle file to be used (optional)." >
+				<Param name="[path/]filename.tfx" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="firebox-efficiency" func="yes">
+			<Overload retVal="" descr="Efficiency of the firebox (higher is more efficient)" >
+				<Param name="decimal (0.0 -> 1.0)" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="firebox-to-boiler-heat-flow" func="yes">
+			<Overload retVal="" descr="Rate of heat flow from firebox to boiler" >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="firebox-to-boiler-heat-flow-idle" func="yes">
+			<Overload retVal="" descr="Rate of heat flow from firebox to boiler when idle" >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="firebox-volume" func="yes">
+			<Overload retVal="" descr="Physical volume of firebox in litres" >
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="flash" func="yes">
+			<Overload retVal="" descr="I guess this is a Boolean to tell if the
+						light needs to flash. Probably speed tells how fast to
+						flash? https://online.ts2009.com/mediaWiki/index.php/KIND_MOSignal" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="flash-offset" func="yes">
+			<Overload retVal="" descr="Dunno https://online.ts2009.com/mediaWiki/index.php/KIND_MOSignal" >
+				<Param name="integer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="flash_scale" func="yes">
+			<Overload retVal="" descr="Sets the speed that the ditch lights flash at. https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="floating" func="yes">
+			<Overload retVal="" descr="If specified the 'floating' tag specifies a vertical offset, in meters, for the assets
+						position. This allows you to create an asset which 'floats' a certain distance of the ground. https://online.ts2009.com/mediaWiki/index.php/KIND_Scenery" >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="flowsize" func="yes">
+			<Overload retVal="" descr="Flowsize settings specify the rate of flow through the pipes." >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="follow-gradient" func="yes">
+			<Overload retVal="" descr="If true (1) the object will be oriented perpendicular to
+						the track gradient. If false (0 - default) the asset will
+						be oriented vertically, ignoring the track gradient. https://online.ts2009.com/mediaWiki/index.php/KIND_Scenery-trackside" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="follows-ground-height-at-ends-of-mesh" func="yes">
+			<Overload retVal="" descr="If this boolean value is set(1), the spline height
+						is effectively deformed such that the end-points of each
+						repeat of the mesh follow the ground height. Spline height
+						throughout the mesh varies in a linear fashion. If clear (0),
+						the spline height is not affected. Certain other options,
+						such as (&quot;follows-spline-gradient 0&quot;) or (&quot;coordinate-transformation spline&quot;) may cause this option to be largely meaningless. https://online.ts2009.com/mediaWiki/index.php/Track_Part_Container" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="follows-spline-gradient" func="yes">
+			<Overload retVal="" descr="If set (1), this boolean tag causes the child spline
+						to follow the gradient of this spline rather than leaving
+						the child to determine whether it should follow the spline
+						gradient or the ground height. https://online.ts2009.com/mediaWiki/index.php/%22attached-splines%22_container" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="follows-spline-gradient" func="yes">
+			<Overload retVal="" descr="If this boolean value is set (1), the mesh is
+						deformed to smoothly follow the height-gradient of the spline.
+						If clear (0), the mesh is instead deformed to follow
+						the ground height along the centre-line of the spline (&quot;adjust-cross-section-to-ground 1&quot;) or under each vertex (&quot;adjust-cross-section-to-ground 0&quot;). https://online.ts2009.com/mediaWiki/index.php/Track_Part_Container" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fontcolor" func="yes">
+			<Overload retVal="" descr="The color of the sign text in r.g.b." >
+				<Param name="rgb value" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fonts" func="yes">
+			<Overload retVal="" descr="Indicates how many types of numbering fonts used." >
+				<Param name="integer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fonts-path" func="yes">
+			<Overload retVal="" descr="Replaces asset-filename usage for ‘fonts’." >
+				<Param name="folder" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fontsize" func="yes">
+			<Overload retVal="" descr="The size of the sign text" >
+				<Param name="float metres" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="frame-rate" func="yes">
+			<Overload retVal="" descr="Generally make this 30 (frames per second)" >
+				<Param name="float frames/second" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="frequency" func="yes">
+			<Overload retVal="" descr="This variable specifies the flash frequency in Hz, e.g.
+						1 for once per second, 0.5 for once every
+						2 seconds, 2 for twice per second." >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="frontlength" func="yes">
+			<Overload retVal="" descr="Obsolete tag https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="frontpivot" func="yes">
+			<Overload retVal="" descr="Obsolete tag https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fuel" func="yes">
+			<Overload retVal="" descr="Fuel level, not currently in use" >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fuel-energy" func="yes">
+			<Overload retVal="" descr="Relative energy in kilojoules per kilogram of coal" >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="full" func="yes">
+			<Overload retVal="" descr="A value for interior-controls-type. Stands for loco https://online.ts2009.com/mediaWiki/index.php/KIND_Interior" >
+				<Param name="value for enum" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="function" func="yes">
+			<Overload retVal="" descr="Must be set to 'TrackSignal'" >
+				<Param name="'TrackSignal'" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="grounded" func="yes">
+			<Overload retVal="" descr="Height in meters for the road to be offset from
+						terrain." >
+				<Param name="float metres" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="height" func="yes">
+			<Overload retVal="" descr="Height from the track level to the base. Must be
+						a negative value in order to raise the bridge above
+						the ground." >
+				<Param name="float metres" />
+			</Overload>
+			<Overload retVal="" descr="Image height" >
+				<Param name="integer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="height-range" func="yes">
+			<Overload retVal="" descr="Height-range min, max eg: height-range –10, 100. Where min and max are values in meters." >
+				<Param name="float minMetres" />
+				<Param name="float maxMetres" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="hidden" func="yes">
+			<Overload retVal="" descr="Prevents the spline from being rendered." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="high-detail" func="yes">
+			<Overload retVal="" descr="The path to choose when the value evaluated for the
+						condition/parameter defined in the same segment of the lod-tree
+						passes the threshold https://online.ts2009.com/mediaWiki/index.php/%22track-lod-tree%22_container" >
+				<Param name="subcontainer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="high_beam_value" func="yes">
+			<Overload retVal="" descr="Comma separated sequence of decimal values. Used to configure the
+						brightness of the lights when in high beam mode. https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="list of float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="highspeedexhauster" func="yes">
+			<Overload retVal="" descr="For vacuum braking - not currently in use" >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="highspeedexhauster_vacuumbrakepipe" func="yes">
+			<Overload retVal="" descr="For vacuum braking" >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="holdcarz" func="yes">
+			<Overload retVal="" descr="True if road traffic should be disabled. https://online.ts2009.com/mediaWiki/index.php/KIND_Map" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="home" func="yes">
+			<Overload retVal="" descr="I guess it's 1 (true) for home signals https://online.ts2009.com/mediaWiki/index.php/KIND_MOSignal" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="hornsound" func="yes">
+			<Overload retVal="" descr="References the KUID number for the traincar horn sound." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="hostler" func="yes">
+			<Overload retVal="" descr="A value for interior-controls-type. Stands for hostler https://online.ts2009.com/mediaWiki/index.php/KIND_Interior" >
+				<Param name="value for enum" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="icon" func="yes">
+			<Overload retVal="" descr="An image file (preferably .TGA, 64x64) to use as an
+						icon for the achievement. Optional. https://online.ts2009.com/mediaWiki/index.php/Achievements_container" >
+				<Param name="filename" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="icon-texture" func="yes">
+			<Overload retVal="" descr="The in-game representation of the product when specifying the
+						load type for a compatible rollingstock item (driver) Should be
+						a 64x64 TGA." >
+				<Param name="[path/]filename.texture" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="icon-texture" func="yes">
+			<Overload retVal="" descr="Specifies an icon texture for the asset. Icons are used
+						as thumbnails in various asset lists in Surveyor and can
+						alternatively be specified using a thumbnail container. https://online.ts2009.com/mediaWiki/index.php/KIND_Scenery" >
+				<Param name="path to a file" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="icon0" func="yes">
+			<Overload retVal="" descr="Deprecated. Use thumbnails container" >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="icon1" func="yes">
+			<Overload retVal="" descr="Deprecated. Use thumbnails container" >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="icon2" func="yes">
+			<Overload retVal="" descr="Deprecated. Use thumbnails container" >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="icon3" func="yes">
+			<Overload retVal="" descr="Deprecated. Use thumbnails container" >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="image" func="yes">
+			<Overload retVal="" descr="Image filename" >
+				<Param name="[path/]filename" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="indbrakefull" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="independantbrakecylinder" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="independantbrakecylinder_start" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="info-page" func="yes">
+			<Overload retVal="" descr="Filename of the HTML information page for the session." >
+				<Param name="[path/]filename.html" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="info-page" func="yes">
+			<Overload retVal="" descr="Original use: File reference to (usually) an HTML file (so
+						called 'Tech Manuals') describing use of an asset, or in the case of
+						a complex session or route, providing details in the form
+						of text explanations, lists, tables, schedules and many many maps.
+						https://online.ts2009.com/mediaWiki/index.php/KIND_Map" >
+				<Param name="path to a file" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="info-url" func="yes">
+			<Overload retVal="" descr="A link to an online description of this asset. The
+						URL must resolve to a site within the Trainz Online
+						Security Zone. The use of custom Trainz Short URL formats
+						is recommended to future-proof the URL against possible future
+						site layout changes. Where this tag is present, in-game
+						buttons are provided to allow the user to view the
+						asset description without leaving the game environment. It is recommended
+						that generic group pages are used for entire classes of
+						asset in any case where the assets provide similar functionality
+						but minor differences in appearance. This reduces the time-expense
+						of creating, maintaining and localizing such documentation. https://online.ts2009.com/mediaWiki/index.php/KIND_Track" >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="inherit-velocity" func="yes">
+			<Overload retVal="" descr="Causes particles to inherit the velocity of the emitter, default
+						is off." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="initial-boiler-temperature" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="initial-count" func="yes">
+			<Overload retVal="" descr="The initial number of items in the queue." >
+				<Param name="integer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="initiator" func="yes">
+			<Overload retVal="" descr="Name of model to use at start of bridge, placed
+						in subfolder with same name." >
+				<Param name="folder" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="inputs" func="yes">
+			<Overload retVal="" descr="Input process list" >
+				<Param name="subcontainer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="instance-type" func="yes">
+			<Overload retVal="" descr="Instance-type: 'resource' is used when there is no mesh, or one only
+						mesh is referenced in the mesh table (Ie Liquids, Bulk
+						loads etc). 'instance' is used when more than one mesh is in the
+						mesh table Ie: Passengers, General Goods. 200 max.‘size’ per Asset." >
+				<Param name="'instance'/'resource'" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="interior" func="yes">
+			<Overload retVal="" descr="References the KUID number for the traincar interior cab view." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="interior-controls-type" func="yes">
+			<Overload retVal="" descr="Specifies the type of the control. https://online.ts2009.com/mediaWiki/index.php/KIND_Interior" >
+				<Param name="enumerated string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="interior-light-color" func="yes">
+			<Overload retVal="" descr="This specifies the RGB level of self-illumination to be
+						applied. https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="list of integers" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="interior-light-texture" func="yes">
+			<Overload retVal="" descr="The name of the texture resource (with the '.texture.txt' part omitted) https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="path to a file" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="interpolate" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="invisible" func="yes">
+			<Overload retVal="" descr="Specifies whether the object is invisible." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ip" func="yes">
+			<Overload retVal="" descr="Restricts connections to a specific IP address https://online.ts2009.com/mediaWiki/index.php/Socket-template-list_Container" >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="is-payware-content" func="yes">
+			<Overload retVal="" descr="Indicates whether the asset is an N3V-distributed payware asset.
+						This is not related to the licensing of the asset,
+						but instead is a technical copy-protection mechanism. Setting this
+						flag causes the game to expect that certain file types
+						within the asset will be in special payware-specific file
+						formats. The setting of this flag must match the actual
+						format of the included files, or the game will be
+						unable to load the files. When this flag is set,
+						the asset is considered payware and requires purchase authorisation before
+						the user is able to utilise the asset in-game.
+						https://online.ts2009.com/mediaWiki/index.php/%22privileges%22_container" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="is_silent" func="yes">
+			<Overload retVal="" descr="If set (1), this boolean tag disables the playing of
+						per-axle sounds for vehicles on the spline. https://online.ts2009.com/mediaWiki/index.php/KIND_Track" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isfading" func="yes">
+			<Overload retVal="" descr="For diesel engine sounds, 'fading' sounds do not have transition sounds between each level state -
+						instead, one sound is faded into the next to 'fake' a transition. For electric enginesounds, 'fading' sounds are quieter at low speed and louder at high
+						speed - whereas 'non-fading' sounds are more constant across the speed range. https://online.ts2009.com/mediaWiki/index.php/KIND_Enginesound" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isfreeway" func="yes">
+			<Overload retVal="" descr="If set (1), this boolean tag causes a multilane road
+						to act as a freeway. https://online.ts2009.com/mediaWiki/index.php/KIND_Track" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isramping" func="yes">
+			<Overload retVal="" descr="Ramping' diesel enginesounds have transition sounds between each level state. https://online.ts2009.com/mediaWiki/index.php/KIND_Enginesound" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isroad" func="yes">
+			<Overload retVal="" descr="Isroad/Istrack. Two boolean tags detailing the behavior of the bridge.
+						If the isroad is set to true, then cars are
+						placed on the bridge. Both values should not be set
+						to true." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="istrack" func="yes">
+			<Overload retVal="" descr="Isroad/Istrack. Two boolean tags detailing the behavior of the bridge.
+						If the isroad is set to true, then cars are
+						placed on the bridge. Both values should not be set
+						to true." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="istunnel" func="yes">
+			<Overload retVal="" descr="Disables smoke effects for trains on track with this tag
+						set. Useful for tunnels, engine houses, snow sheds - anywhere you
+						don't want smoke going through the roof of a structure." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="junction-lever-mesh" func="yes">
+			<Overload retVal="" descr="The mesh (selected from the mesh table) to be used
+						as a junction lever." >
+				<Param name="subcontainer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="junction-mutex" func="yes">
+			<Overload retVal="" descr="The &quot;junction-mutex&quot; tag optionally specifies the name of a &quot;mutexes&quot; Container entry to use for the junction's mutex. This allows sharing a single mutex between multiple
+						junctions, and requires a detailed understanding of the trainz Permit
+						system. If ommitted, the junction will use a unqiue mutex.
+						https://online.ts2009.com/mediaWiki/index.php/%22junction-vertices%22_Container" >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="junction-mutex-sharing-forward" func="yes">
+			<Overload retVal="" descr="The &quot;junction-mutex-sharing-left&quot;, &quot;junction-mutex-sharing-forward&quot;, and &quot;junction-mutex-sharing-right&quot; tags describe sharing masks for the junction's mutex. Two or more permits may be granted for
+						a junction simultaneously if a bitwise and of their sharing
+						masks gives a non-zero result. When a permit is
+						requested by script for this junction's mutex, the appropriate sharing masks is selected based on
+						the requested direction. If no direction is specified (eg. a
+						legacy script is in use) then a sharing mask of
+						zero is used. https://online.ts2009.com/mediaWiki/index.php/%22junction-vertices%22_Container" >
+				<Param name="integer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="junction-mutex-sharing-left" func="yes">
+			<Overload retVal="" descr="The &quot;junction-mutex-sharing-left&quot;, &quot;junction-mutex-sharing-forward&quot;, and &quot;junction-mutex-sharing-right&quot; tags describe sharing masks for the junction's mutex. Two or more permits may be granted for
+						a junction simultaneously if a bitwise and of their sharing
+						masks gives a non-zero result. When a permit is
+						requested by script for this junction's mutex, the appropriate sharing masks is selected based on
+						the requested direction. If no direction is specified (eg. a
+						legacy script is in use) then a sharing mask of
+						zero is used. https://online.ts2009.com/mediaWiki/index.php/%22junction-vertices%22_Container" >
+				<Param name="integer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="junction-mutex-sharing-right" func="yes">
+			<Overload retVal="" descr="The &quot;junction-mutex-sharing-left&quot;, &quot;junction-mutex-sharing-forward&quot;, and &quot;junction-mutex-sharing-right&quot; tags describe sharing masks for the junction's mutex. Two or more permits may be granted for
+						a junction simultaneously if a bitwise and of their sharing
+						masks gives a non-zero result. When a permit is
+						requested by script for this junction's mutex, the appropriate sharing masks is selected based on
+						the requested direction. If no direction is specified (eg. a
+						legacy script is in use) then a sharing mask of
+						zero is used. https://online.ts2009.com/mediaWiki/index.php/%22junction-vertices%22_Container" >
+				<Param name="integer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="junction-vertex" func="yes">
+			<Overload retVal="" descr="The attachment point (located in mesh file) at which to
+						place the lever." >
+				<Param name="helper" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="junction-vertices" func="yes">
+			<Overload retVal="" descr="The Junction-Vertices Container contains the tags needed to handle
+						the lever portions of a fixed track." >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="keyframes" func="yes">
+			<Overload retVal="" descr="Specifies where on the animation the turntable is to stop." >
+				<Param name="integer list" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="kind" func="yes">
+			<Overload retVal="" descr="This effect is used when a mesh has a variety
+						of animations. Usually the animations will be controlled by a
+						script related to the asset." >
+				<Param name="'animation'" />
+			</Overload>
+			<Overload retVal="" descr="In TRS we now have the ability to attach a
+						mesh into another mesh by referencing it’s KUID through a meshtable." >
+				<Param name="'attachment'" />
+			</Overload>
+			<Overload retVal="" descr="A corona is a ‘glow’ light effect. It is a simple texture that is inserted
+						at an attachment point within the mesh. Coronas can be
+						added to any asset that uses a meshtable." >
+				<Param name="'corona'" />
+			</Overload>
+			<Overload retVal="" descr="Some assets may have editable signs. When you set an
+						asset’s name in surveyor through the Edit Properties icon (‘?’ icon) the signage can be set-up to automatically update.
+						The variables can be set for each sign." >
+				<Param name="'name'" />
+			</Overload>
+			<Overload retVal="" descr="This effect was created for rolling stock items to swap
+						the visible texture of bulk loads (such as coal or
+						woodchips)." >
+				<Param name="'texture-replacement'" />
+			</Overload>
+			<Overload retVal="" descr="The type of interior object the particular mesh is. Affects
+						the behavior of the mesh in game. Kinds: lever (Levers,
+						switches, dials etc), animated-lever (Animated Levers etc Eg. in
+						steam cabs), collision-proxy (Mouse collisions for animated levers), needle 
+						(Gauge needles, Speedo, brake pres.), pullrope (Pull rope horn as
+						in the F7), light (Wheelslip light)" >
+				<Param name="interior object kind" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="kind" func="yes">
+			<Overload retVal="" descr="Asset kind." >
+				<Param name="kind" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="kuid" func="yes">
+			<Overload retVal="" descr="Asset kuid" >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="kuid-table" func="yes">
+			<Overload retVal="" descr="List of all required dependencies." >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="lateral-offset" func="yes">
+			<Overload retVal="" descr="This decimal tag defines the number of meters that the
+						child spline is offset sideways from its parent's position. The parent is at position 0.0, with
+						positive offsets to the right, and negative offsets to the
+						left. https://online.ts2009.com/mediaWiki/index.php/%22attached-splines%22_container" >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="latitude" func="yes">
+			<Overload retVal="" descr="Latitude of this region" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="left-passenger-door" func="yes">
+			<Overload retVal="" descr="Predefined submesh identifier. Left side passenger doors." >
+				<Param name="subcontainer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="length" func="yes">
+			<Overload retVal="" descr="Length of track segment in meters" >
+				<Param name="float metres" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="levels" func="yes">
+			<Overload retVal="" descr="Relative sound levels. The sound is silent until 0.1
+						m/s, ramping up in volume until 10.0 m/s, constant maximum after that. 
+						Note, a value below 0. 1 will not play a sound." >
+				<Param name="subcontainer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="licence" func="yes">
+			<Overload retVal="" descr="User licence details" >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="license" func="yes">
+			<Overload retVal="" descr="A license describing how the asset creator would like this
+						asset to be used. The meaning of the license tag
+						is ambiguous and its usage is not recommended. Content uploaded
+						to the Download Station or provided for inclusion into the
+						game may be under a specific redistribution contract or license
+						agreement which supersedes any text in this field. The license
+						field does not provide for localization support. The text of
+						the license field is not validated or enforced by Auran
+						and may or may not be legally binding to end
+						users. https://online.ts2009.com/mediaWiki/index.php/KIND_Track" >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="lifetime" func="yes">
+			<Overload retVal="" descr="Time in seconds that smoke particles exist for. Default is
+						3." >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="light" func="yes">
+			<Overload retVal="" descr="Sets lighting to be used for object to be ambient
+						or directional. 0 sets ambient lighting and object is light
+						by general light value, 1 sets directional light which is
+						affected by the position of the sun." >
+				<Param name="boolean" />
+			</Overload>
+			<Overload retVal="" descr="ID of the object from the lights container https://online.ts2009.com/mediaWiki/index.php/KIND_MOSignal" >
+				<Param name="id from lights" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="light-is-on-front-end" func="yes">
+			<Overload retVal="" descr="Identifies this tail light as being a front light(True)
+						or a rear light(False) of the traincar. https://online.ts2009.com/mediaWiki/index.php/Tail-lights_container" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="light_color" func="yes">
+			<Overload retVal="" descr="RGB headlight color. Eg. 255,255,255." >
+				<Param name="rgb value" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="lights" func="yes">
+			<Overload retVal="" descr="Signal lighting container. A list of coronas attached to each
+						light point. Coronas are stored in each signal object’s directory alongside it’s textures." >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="lights-ID" func="yes">
+			<Overload retVal="" descr="Light point identifier." >
+				<Param name="subcontainer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="limits" func="yes">
+			<Overload retVal="" descr="Mathematical boundaries Trainz uses determine the objects function. These values
+						vary as different objects use different mathematical units." >
+				<Param name="float list" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="lod-distance" func="yes">
+			<Overload retVal="" descr="The lod-distance tag provides the distance (in meters) that
+						defines whether the parsing will use the high detail path
+						of the branch node (the current view distance is less
+						than the lod-distance) or the low detail path (the
+						current view distance is greater than the lod-distance). https://online.ts2009.com/mediaWiki/index.php/%22track-lod-tree%22_container" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="lod-is-surveyor" func="yes">
+			<Overload retVal="" descr="When set to '1', this tag causes the high &quot;detail&quot; path to be chosen when in editing mode. https://online.ts2009.com/mediaWiki/index.php/%22track-lod-tree%22_container" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="lod-length" func="yes">
+			<Overload retVal="" descr="Track parts are scaled to some extent based on the
+						length of the Track Stretch being generated and the mesh-length tag. 
+						The lod-length tag provides a mechanism for
+						forcing the high-detail path for short parts, even when
+						the low-detail path would be appropriate given the distance.
+						https://online.ts2009.com/mediaWiki/index.php/%22track-lod-tree%22_container" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="lod-piece-position" func="yes">
+			<Overload retVal="" descr="If present, valid options include &quot;first&quot;, &quot;last&quot;, and &quot;first-or-last&quot; which activate the high &quot;detail&quot; path when this mesh is (respectively) the first, last,
+						or either the first or last mesh in the track 
+						(ie. the mesh is adjacent to an endcap position, regardless
+						of whether an endcap mesh is present). https://online.ts2009.com/mediaWiki/index.php/%22track-lod-tree%22_container" >
+				<Param name="enumerated string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="lod-random-bias" func="yes">
+			<Overload retVal="" descr="At the default setting of 0.0, this has no
+						effect. As the number is raised toward 1.0, the
+						chance of forcing the high &quot;detail&quot; path is increased. At 1.0 or higher, the
+						high detail path would always be chosen. While this tag
+						can be used in tandem with other lod-* tags, the behavior is somewhat arbitrary so this isn't recommended. A value of 0.5 gives a 50% variation between high and low &quot;detail&quot; paths. https://online.ts2009.com/mediaWiki/index.php/%22track-lod-tree%22_container" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="lod-season-index" func="yes">
+			<Overload retVal="" descr="When a specific season index (as per the &quot;Season-selector&quot; container) is specified, this tag causes the high &quot;detail&quot; path to be chosen when that season is current.
+						https://online.ts2009.com/mediaWiki/index.php/%22track-lod-tree%22_container" >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="lod-tessellation-length" func="yes">
+			<Overload retVal="" descr="The lod-tessellation-length tag provides a mechanism for forcing
+						the high-detail path for track parts with high tessellation
+						requirements. https://online.ts2009.com/mediaWiki/index.php/%22track-lod-tree%22_container" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="longitude" func="yes">
+			<Overload retVal="" descr="Longitude of this region" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="loop" func="yes">
+			<Overload retVal="" descr="Time in seconds to loop the smoke sequence. Only valid
+						if mode is set to time." >
+				<Param name="float seconds" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="loopdelay" func="yes">
+			<Overload retVal="" descr="Delay (in seconds) before the effect is played again." >
+				<Param name="float seconds" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="looped" func="yes">
+			<Overload retVal="" descr="Looped 1 (optional) Use only if the animation is looping 
+						(repeating). Default 0 (i.e. not looped)." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="looping" func="yes">
+			<Overload retVal="" descr="Specifies that the turntable can go all the way around,
+						rather than stopping at a certain point." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="low-detail" func="yes">
+			<Overload retVal="" descr="The path to choose when the value evaluated for the
+						condition/parameter defined in the same segment of the lod-tree
+						stays below the threshold https://online.ts2009.com/mediaWiki/index.php/%22track-lod-tree%22_container" >
+				<Param name="subcontainer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="low_beam_value" func="yes">
+			<Overload retVal="" descr="Comma separated sequence of decimal values. Used to configure the
+						brightness of the lights when in low beam mode. https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="list of float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="main-reservoir-volume" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="mainreservoir" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="mainreservoir_ep" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="mainreservoir_start" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="map-kuid" func="yes">
+			<Overload retVal="" descr="Kuid of the map attached to this session." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="mass" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="container" />
+			</Overload>
+			<Overload retVal="" descr="The physical mass of the product. For Containers and Passengers
+						this is calculated in kilograms/unit, while for Liquid and Bulk loads this is calculated
+						in kilograms/litre." >
+				<Param name="float kg" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="mass" func="yes">
+			<Overload retVal="" descr="Mass in kilograms" >
+				<Param name="integer kg" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="max-accel" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="max-coupler-gap" func="yes">
+			<Overload retVal="" descr="Maximum gap expected between couplers of this type" >
+				<Param name="float metres" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="max-decel" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="max-distance" func="yes">
+			<Overload retVal="" descr="Maximum distance at which the sound is played. Eg 1000" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="max-fire-coal-mass" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="max-fire-temperature" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="max-tractive-effort" func="yes">
+			<Overload retVal="" descr="Maximum tractive effort this vehicle can put into the track
+						in Newtons. https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="max_permitted_speed" func="yes">
+			<Overload retVal="" descr="Obsolete tag https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="maximum-lod-distance" func="yes">
+			<Overload retVal="" descr="If specified, controls the distance (meters) at which the maximum
+						mesh-table LOD is reached. https://online.ts2009.com/mediaWiki/index.php/KIND_Mesh" >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="maximum-volume" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="maxrate" func="yes">
+			<Overload retVal="" descr="The maximum rate at which particles are emitted." >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="maxsize" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="maxspeed" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="maxspeedkph" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="maxvoltage" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="member-of-groups" func="yes">
+			<Overload retVal="" descr="A list of KIND Asset-group assets to which this
+						asset belongs. See the KIND Asset-group documentation for details
+						on how and when this is used. https://online.ts2009.com/mediaWiki/index.php/KIND_Track" >
+				<Param name="container (member-of-groups)" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="menu" func="yes">
+			<Overload retVal="" descr="A value of the context tag for a control container.
+						Key will activate in any of the in-game menu
+						screens (e.g. the Routes menu) https://online.ts2009.com/mediaWiki/index.php/Controls_container" >
+				<Param name="value for enum" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="mesh" func="yes">
+			<Overload retVal="" descr="The mesh name. This may include a sub-path. ie:
+						mesh nightwindows/nightwindows.im, where the file nightwindows.im has been placed
+						in the subdirectory nightwindows." >
+				<Param name="[path/]filename.pm" />
+			</Overload>
+			<Overload retVal="" descr="This refers to the kuid of the mesh asset inserted
+						in to the locomotive mesh at a.driver0 (when in
+						the Driver Module)." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="mesh-detail-level-count" func="yes">
+			<Overload retVal="" descr="Couldn't find anything https://online.ts2009.com/mediaWiki/index.php/KIND_Mesh" >
+				<Param name="list of integers" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="mesh-length" func="yes">
+			<Overload retVal="" descr="The mesh-length value is a track distance in meters
+						which defines the basic unit length of track that the
+						track-lod-tree describes. The track-lod-tree may supply
+						a single mesh of this length, or may subdivide the
+						unit mesh-length into a number of smaller mesh pieces.
+						https://online.ts2009.com/mediaWiki/index.php/Track_Part_Container" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="mesh-table" func="yes">
+			<Overload retVal="" descr="This is the new and preferred method of asset mesh
+						placement for most mesh asset types. It gives huge control
+						over mesh placement and animations. There are some asset types
+						that cannot use a meshtable. These include all Bridges, Tunnels,
+						Rails, Pantographs and other Spline Objects (eg. Fences or Catenaries)." >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="mesh-table-lod-transition-distances" func="yes">
+			<Overload retVal="" descr="The &quot;mesh-table-lod-transition-distances&quot; tag (float array) determines the distances in meters at
+						which each mesh-table LOD level ends. https://online.ts2009.com/mediaWiki/index.php/KIND_Mesh" >
+				<Param name="list of integers" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="min-distance" func="yes">
+			<Overload retVal="" descr="Minimum distance at which the sound is played. Eg 0." >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="minimum-volume" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="minrate" func="yes">
+			<Overload retVal="" descr="The minimum rate at which particles are emitted." >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="minsize" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="mode" func="yes">
+			<Overload retVal="" descr="Speed | anim | timeofday)." >
+				<Param name="speed/anim/timeofday/time" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="mode0" func="yes">
+			<Overload retVal="" descr="Mesh showing lever in first position" >
+				<Param name="subcontainer" />
+			</Overload>
+			<Overload retVal="" descr="Predefined submesh identifier. Mesh showing lever in first position" >
+				<Param name="subcontainer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="mode1" func="yes">
+			<Overload retVal="" descr="Mesh showing lever in second position" >
+				<Param name="subcontainer" />
+			</Overload>
+			<Overload retVal="" descr="Predefined submesh identifier. Mesh showing lever in second position" >
+				<Param name="subcontainer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="motor" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="mousespeed" func="yes">
+			<Overload retVal="" descr="This controls the use of the mouse on screen. Use
+						this to control the mouse speed and push/pull direction for levers and dials. • mousespeed -1 Inverts mouse direction. • mousespeed 2 Doubles mouse speed in default direction. • mousespeed -0.5 Inverts mouse direction and halves the speed." >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="moving-friction-coefficient" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="multiple-unit-increment-front" func="yes">
+			<Overload retVal="" descr="Optional tag used for assigning sequential/identical running numbers to multiple-unit trains. https://online.ts2009.com/mediaWiki/index.php/Vehicle-running-numbers_container" >
+				<Param name="integer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="multiple-unit-increment-rear" func="yes">
+			<Overload retVal="" descr="Optional tag used for assigning sequential/identical running numbers to multiple-unit trains. https://online.ts2009.com/mediaWiki/index.php/Vehicle-running-numbers_container" >
+				<Param name="integer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="must-have-product-rights" func="yes">
+			<Overload retVal="" descr="A list of required product rights, separated by semi-colons (';'). If the local installation does not have the required product
+						rights then the asset may not be loaded by certain
+						game systems. https://online.ts2009.com/mediaWiki/index.php/KIND_Track" >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="must-not-have-product-rights" func="yes">
+			<Overload retVal="" descr="A list of conflicting product rights, separated by semi-colons (';'). If the local installation has one of the listed product
+						rights then the asset may not be loaded by certain
+						game systems. https://online.ts2009.com/mediaWiki/index.php/KIND_Track" >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="mutexes" func="yes">
+			<Overload retVal="" descr="A mutexes container allows for manual specification of mutex assignment
+						for junctions. This is typically used where multiple junction vertices
+						operate together as a single unit, and requires a detailed
+						understanding of the Permit system. https://online.ts2009.com/mediaWiki/index.php/KIND_SceneryWithTrack" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="name" func="yes">
+			<Overload retVal="" descr="When name name is specified, it uses the asset’s changeable name. Changed through the Edit Properties icon (the ‘?’ icon) in Surveyor." >
+				<Param name="'name'" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="name-token" func="yes">
+			<Overload retVal="" descr="The name of a string table entry with the user
+						visible name of the control in it. This string table
+						entry will be used in the Trainz user interface to
+						refer to the control. It should be very short. https://online.ts2009.com/mediaWiki/index.php/Controls_container" >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="network" func="yes">
+			<Overload retVal="" descr="Specifies &quot;local&quot;, &quot;lan&quot; or &quot;wan&quot; connection https://online.ts2009.com/mediaWiki/index.php/Socket-template-list_Container" >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="night" func="yes">
+			<Overload retVal="" descr="Name of image file for night sky. File should be
+						256 x 256 pixel 24bit tga. The file extension should
+						be excluded here, ie “QLD_Sky” rather than &quot;qLD_Sky.texture.txt”." >
+				<Param name="[path/]filename.tga" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="night-mesh-base" func="yes">
+			<Overload retVal="" descr="The mesh to which 'default-night' is linked. If the 'night-mesh-base' is hidden then 'default-night' will not be displayed." >
+				<Param name="mesh-table-ID" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="nightmode" func="yes">
+			<Overload retVal="" descr="Only add this tag if you reference a default-night
+						mesh in the mesh-table. Values: home, lamp or constant." >
+				<Param name="home/lamp/constant" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="no-properties" func="yes">
+			<Overload retVal="" descr="A value of properties-behavior tag of drivercommand assets. The
+						command requires no properties to be specified, and the instance
+						will simply be created as-is. https://online.ts2009.com/mediaWiki/index.php/KIND_Enginesound" >
+				<Param name="value for enum" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="no3pipe" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="no3pipe_autobrakecylinder" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="no3pipe_mainreservoir" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="no3pipe_start" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="no3pipevent" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="no4pipe" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="no4pipe_start" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="none" func="yes">
+			<Overload retVal="" descr="A value for interior-controls-type. Stands for non-powered
+						car https://online.ts2009.com/mediaWiki/index.php/KIND_Interior" >
+				<Param name="value for enum" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="normal" func="yes">
+			<Overload retVal="" descr="Name of image file for normal sky. File should be
+						256 x 256 pixel 24bit tga. The file extension should
+						be excluded here, ie “QLD_Sky” rather than &quot;qLD_Sky.texture.txt”." >
+				<Param name="[path/]filename.tga" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="normal-detail-texture" func="yes">
+			<Overload retVal="" descr="The &quot;normal-detail-texture&quot; tag specifies a texture file located within the asset
+						folder. See the discussion on the ground material below for
+						more information on how this image is utilized. https://online.ts2009.com/mediaWiki/index.php/KIND_Groundtexture" >
+				<Param name="filename" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="normal-texture" func="yes">
+			<Overload retVal="" descr="The &quot;normal-texture&quot; tag specifies a texture file located within the asset
+						folder. See the discussion on the ground material below for
+						more information on how this image is utilized. https://online.ts2009.com/mediaWiki/index.php/KIND_Groundtexture" >
+				<Param name="filename" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="nostartdelay" func="yes">
+			<Overload retVal="" descr="0 or 1, default 0 If not set, the sound
+						will have a short delay before playing, this stops flanging 
+						(flanging is a really nasty sound caused when several copies
+						of the same sound are played at once)." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="notches" func="yes">
+			<Overload retVal="" descr="The position of notches within the angle boundaries. These are
+						represented as decimal points between and including 0 and 1." >
+				<Param name="float list" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="notchheight" func="yes">
+			<Overload retVal="" descr="The size of the notches specified." >
+				<Param name="float list" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="number-cylinders" func="yes">
+			<Overload retVal="" descr="Number of cylinders in the locomotive the steam sound was
+						recorded from. https://online.ts2009.com/mediaWiki/index.php/KIND_Enginesound" >
+				<Param name="integer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="number-power-strokes" func="yes">
+			<Overload retVal="" descr="Number of power strokes in the locomotive the steam enginesound
+						was recorded from (should generally be left at the default,
+						2). https://online.ts2009.com/mediaWiki/index.php/KIND_Enginesound" >
+				<Param name="integer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="number-slow-sounds" func="yes">
+			<Overload retVal="" descr="Number of 'chuff' sounds available in a steam enginesound. https://online.ts2009.com/mediaWiki/index.php/KIND_Enginesound" >
+				<Param name="integer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="numlanes" func="yes">
+			<Overload retVal="" descr="Defines the number of carz lanes on a road. https://online.ts2009.com/mediaWiki/index.php/KIND_Track" >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="object-size" func="yes">
+			<Overload retVal="" descr="Size of the corona on the object when viewed up
+						close Defaults to 0.15 (i.e. 0.15m)" >
+				<Param name="float metres" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="obsolete-table" func="yes">
+			<Overload retVal="" descr="The obsolete-table describes the asset’s revision history." >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ontheright" func="yes">
+			<Overload retVal="" descr="Cars drive on the right side of the road." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="opacity" func="yes">
+			<Overload retVal="" descr="Controls the opacity of the mesh. Zero (invisible, not recommended)
+						or one (solid)." >
+				<Param name="0..1" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="organisation" func="yes">
+			<Overload retVal="" descr="Organisation name will show in Trainz in Railyard as the
+						organisation for the model, for instance if you use Joe’s Trainz or Cripple Creek Logging Company." >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="origin" func="yes">
+			<Overload retVal="" descr="Obsolete tag https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="" />
+			</Overload>
+			<Overload retVal="" descr="The Country Abbreviation." >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="orthogonal-size" func="yes">
+			<Overload retVal="" descr="Sets the size of the decal in meters (not compatible
+						with the 'field-of-view' tag) https://online.ts2009.com/mediaWiki/index.php/%22decal%22_Container" >
+				<Param name="Pair of decimals" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="outputs" func="yes">
+			<Overload retVal="" descr="Output process list" >
+				<Param name="subcontainer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="outside-visible-from-cabin" func="yes">
+			<Overload retVal="" descr="If true, makes the loco body mesh visible while in
+						the cab interior view. https://online.ts2009.com/mediaWiki/index.php/KIND_Interior" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="overlap" func="yes">
+			<Overload retVal="" descr="Probably a value in meters telling how much space ahead
+						or after the signal shall be considered as part of
+						the protected block? https://online.ts2009.com/mediaWiki/index.php/KIND_MOSignal" >
+				<Param name="integer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="overlap-track-circuited" func="yes">
+			<Overload retVal="" descr="Dunno https://online.ts2009.com/mediaWiki/index.php/KIND_MOSignal" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="padding-length" func="yes">
+			<Overload retVal="" descr="A distance (meters, float, default 0) to use for spline
+						repeat padding. https://online.ts2009.com/mediaWiki/index.php/Track_Part_Container" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="paintshed-skin-used" func="yes">
+			<Overload retVal="" descr="Obsolete tag https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="paintshed-skin-used" func="yes">
+			<Overload retVal="" descr="Kuid of the paintshed skin to be used for this
+						template." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="paintshed-skin-used" func="yes">
+			<Overload retVal="" descr="Kuid of the paintshed skin used. (if applicable)" >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="paintshed-template-used" func="yes">
+			<Overload retVal="" descr="Obsolete tag https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="paintshed-template-used" func="yes">
+			<Overload retVal="" descr="Kuid of the paintshed template used. (if applicable)" >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="pantograph" func="yes">
+			<Overload retVal="" descr="The pantograph kuid number inserted at a.pant0, a.pant1,
+						etc. Use this tag only when needed." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="parameters-texture" func="yes">
+			<Overload retVal="" descr="The &quot;parameters-texture&quot; tag specifies a texture file located within the asset
+						folder. See the discussion on the ground material below for
+						more information on how this image is utilized. https://online.ts2009.com/mediaWiki/index.php/KIND_Groundtexture" >
+				<Param name="filename" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="passenger-height" func="yes">
+			<Overload retVal="" descr="This value sets the height of the passenger asset in
+						metres, to suit the platform model height. (Doesn't work)" >
+				<Param name="float metres" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="passenger-queue" func="yes">
+			<Overload retVal="" descr="Defines this as a passenger station queue." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="period" func="yes">
+			<Overload retVal="" descr="The usage of period depends on the value of the
+						mode tag. If the mode is set to time, period
+						is the duration of time this effect will remain active." >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="permit-commit" func="yes">
+			<Overload retVal="" descr="Allows the end-user to commit changes to this asset." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="permit-edit" func="yes">
+			<Overload retVal="" descr="Allows the end-user to open this asset for editing" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="permit-listing" func="yes">
+			<Overload retVal="" descr="Allows the end-user to view this object in the
+						surveyor pickers (if it is of an appropriate kind.) Does
+						not affect the visibility of the asset within the CMP
+						asset list." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="piston-angular-offsets" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="piston-area" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="piston-to-atmosphere-flow" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="piston-volume-max" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="piston-volume-min" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="placeable-on-splines-of-group" func="yes">
+			<Overload retVal="" descr=" A list of asset groups describing the spline types on
+						which this trackside object may be placed. https://online.ts2009.com/mediaWiki/index.php/KIND_Scenery-trackside" >
+				<Param name="Container for a list of KUIDs" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="port" func="yes">
+			<Overload retVal="" descr="Restricts connections to a specific port number (compulsory) https://online.ts2009.com/mediaWiki/index.php/Socket-template-list_Container" >
+				<Param name="integer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="position" func="yes">
+			<Overload retVal="" descr="Specifies the position, in meters, of the decal relative to
+						the asset origin. https://online.ts2009.com/mediaWiki/index.php/%22decal%22_Container" >
+				<Param name="list of integers" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="potential" func="yes">
+			<Overload retVal="" descr="A KIND Buildable asset should contain this following named entry
+						in its mesh-table https://online.ts2009.com/mediaWiki/index.php/KIND_Buildable" >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="pressure" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="preview-mesh-kuid" func="yes">
+			<Overload retVal="" descr="The mesh to be used in the surveyor preview area.
+						This is useful when an asset has a large bounding
+						box. Ie the &quot;Airport” with it’s jet animation." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="preview-scale" func="yes">
+			<Overload retVal="" descr="Scale of the preview mesh." >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="priority" func="yes">
+			<Overload retVal="" descr="The priority of the sound versus other sounds to be
+						played. Lower values indicate a higher priority, 0 is the highest." >
+				<Param name="float 0-1" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="privileges" func="yes">
+			<Overload retVal="" descr="Limited content protection applies only to built-in (JArchived) assets." >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="processes" func="yes">
+			<Overload retVal="" descr="Processes (required) The input and output settings of the industry.
+						You can specify the amount of input and output for
+						each queue referenced product as well as the duration (or
+						rate) in seconds for that process to take place. All
+						queues and processes are linked through the industry asset’s script file." >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="product-category" func="yes">
+			<Overload retVal="" descr="Kuid of applicable category for this product" >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="product-id" func="yes">
+			<Overload retVal="" descr="For paintshed support." >
+				<Param name="N/A" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="product-kuid" func="yes">
+			<Overload retVal="" descr="The product type used to fill ‘initial-count’" >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="product-texture" func="yes">
+			<Overload retVal="" descr="The texture to be used with load ‘texture-replacement’. Ie When a hopper loads woodchips instead of it’s default load of coal." >
+				<Param name="[path/]filename.texture" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="product-type" func="yes">
+			<Overload retVal="" descr="For paintshed support." >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="product-version" func="yes">
+			<Overload retVal="" descr="For paintshed support." >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="projection-depth" func="yes">
+			<Overload retVal="" descr="The projection distance or the depth at which the decal
+						will no longer be visible (in meters). https://online.ts2009.com/mediaWiki/index.php/%22decal%22_Container" >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="properties-behavior" func="yes">
+			<Overload retVal="" descr="Controls the behavior of the Driver Command in the 'add driver command' menu. https://online.ts2009.com/mediaWiki/index.php/KIND_Drivercommand" >
+				<Param name="enumerated string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="queue" func="yes">
+			<Overload retVal="" descr="Queue from which to take input." >
+				<Param name="queues-ID" />
+			</Overload>
+			<Overload retVal="" descr="Queue in which to place output." >
+				<Param name="queues-ID" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="queues" func="yes">
+			<Overload retVal="" descr="The queues container states which product or products the industry
+						can use. It contains the size of each product, the
+						initial count when placed, and can refer to it’s visual load state whether through a load animation or
+						attachment." >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="radius" func="yes">
+			<Overload retVal="" descr="Radius (in meters) of the trigger." >
+				<Param name="float" />
+			</Overload>
+			<Overload retVal="" descr="The notch position relative to the attachment point." >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="rail-width" func="yes">
+			<Overload retVal="" descr="Number, width over the head of the rail in meters.
+						https://online.ts2009.com/mediaWiki/index.php/KIND_Procedural_track" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="railyard" func="yes">
+			<Overload retVal="" descr="A value of the context tag for a control container.
+						Key will activate in Railyard https://online.ts2009.com/mediaWiki/index.php/Controls_container" >
+				<Param name="value for enum" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="random-color-high-hsb" func="yes">
+			<Overload retVal="" descr="For clutter-mesh objects, specifies a color range for tinting
+						purposes. HSB color space." >
+				<Param name="hsb value" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="random-color-low-hsb" func="yes">
+			<Overload retVal="" descr="For clutter-mesh objects, specifies a color range for tinting
+						purposes. HSB color space." >
+				<Param name="hsb value" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="rate" func="yes">
+			<Overload retVal="" descr="The rate of emission in particles per second for modes
+						time, speed, and timeofday, or the number of particles to
+						emit over the animation period for anim mode. Default is
+						4." >
+				<Param name="float particles/second" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="real-engine" func="yes">
+			<Overload retVal="" descr="Obsolete tag https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="reassignable" func="yes">
+			<Overload retVal="" descr="Whether the control supports player reassignment in the options menus.
+						https://online.ts2009.com/mediaWiki/index.php/Controls_container" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="region" func="yes">
+			<Overload retVal="" descr="Trainz 1.x legacy tag; the country region to which
+						this asset belongs. This should be one of the Auran-supplied region names, 
+						but older content has shown full names." >
+				<Param name="region code" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="repeat-delay" func="yes">
+			<Overload retVal="" descr="1 or 2 numbers (min, max, in sec) time to
+						delay between the end of the sound playing, and playing
+						it again randomised between(min .. max) default min is 0,
+						default max is equal to min Notes: Repeat-delay now
+						has two values rather than one. When upgrading old assets,
+						make sure there is a repeat delay for both values
+						or the sound will loop endlessly when triggered." >
+				<Param name="int minSeconds" />
+				<Param name="int maxSeconds" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="repeater" func="yes">
+			<Overload retVal="" descr="I guess it's 1 (true) for repeater signals https://online.ts2009.com/mediaWiki/index.php/KIND_MOSignal" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="repeats" func="yes">
+			<Overload retVal="" descr="The number of times the mesh is placed between spline
+						points" >
+				<Param name="integer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="resistance" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="reversed" func="yes">
+			<Overload retVal="" descr="Reverses the animation direction. Use when the bogie attachment point
+						in the traincar asset has been rotated 180 degrees around
+						the Z axis." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="rgb" func="yes">
+			<Overload retVal="" descr="This value should be left as default." >
+				<Param name="rgb value" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="right-passenger-door" func="yes">
+			<Overload retVal="" descr="Predefined submesh identifier. Right side passenger doors." >
+				<Param name="subcontainer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="rollstep" func="yes">
+			<Overload retVal="" descr="Where n is a value in degrees. Used in conjunction
+						with rotate-yz-range, rollstep lets you specify the step
+						size of roll angles for this object. Other example values
+						are 1, 5, 20 etc. The default rollstep is 1.0." >
+				<Param name="float degrees" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="rotate" func="yes">
+			<Overload retVal="" descr="Where n is 0 or 1 (default). This lets you
+						disable rotation on a scenery object. 0 to disable, 1
+						to enable (default)." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="rotate-yz-range" func="yes">
+			<Overload retVal="" descr="Where min and max are values in degrees. This tag
+						lets you set the roll / yz rotation range (normal object rotation is an xy rotation).
+						If you want your scenery object to support rolling then
+						use this tag to set the minimum and maximum roll
+						range. By default, objects have a min/max roll range of 0 to 0." >
+				<Param name="int minDegrees" />
+				<Param name="int maxDegrees" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="rotation-permitted" func="yes">
+			<Overload retVal="" descr="Allows the bogey to rotate itself in the Z axis
+						to align with track direction. If 1 (default) then the
+						bogey will rotate and if 0 then the bogey will
+						not rotate. Using a zero value can be useful when
+						the wheels being represented are fixed to the frame of
+						the vehicle, and are not mounted on a rotating bogey." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="rotstep" func="yes">
+			<Overload retVal="" descr="Where n is a value in degrees. This lets you
+						specify the step size of rotation angles for this object.
+						Other example values are 1, 10, 20, 90, 180 etc.
+						The default rotstep is 1.0" >
+				<Param name="float degrees" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="running-number" func="yes">
+			<Overload retVal="" descr="Running number of the vehicle." >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="running-numbers" func="yes">
+			<Overload retVal="" descr="Specifies the valid running-number range(s) to randomly select
+						from. This can be a list, a range, or any
+						combination of both. https://online.ts2009.com/mediaWiki/index.php/Vehicle-running-numbers_container" >
+				<Param name="List of ranges" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="safety-valve-high-flow" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="safety-valve-high-pressure" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="safety-valve-low-flow" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="safety-valve-low-pressure" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="scale" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="script" func="yes">
+			<Overload retVal="" descr="This refers to the name of the script file." >
+				<Param name="[path/]filename.gs" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="script-include-table" func="yes">
+			<Overload retVal="" descr="A key-value table of scripted assets which are searched
+						for script includes when compiling this asset's script file(s). The key is currently unused but
+						must be unique; the value indicates the KUID of the
+						asset to include. https://online.ts2009.com/mediaWiki/index.php/KIND_Track" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="search-limit" func="yes">
+			<Overload retVal="" descr="Not required. For internal use only." >
+				<Param name="N/A" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="season-selector" func="yes">
+			<Overload retVal="container" descr="Allows the simulator to display an appropriate visual for each
+						asset instance based on certain environmental parameters. (https://online.ts2009.com/mediaWiki/index.php/%22season-selector%22_container)" />
+		</KeyWord>
+		<KeyWord name="shadow" func="yes">
+			<Overload retVal="" descr="Predefined submesh identifier. Shadow mesh." >
+				<Param name="subcontainer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="shadows" func="yes">
+			<Overload retVal="" descr="Undocumented" >
+				<Param name="N/A" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="shift" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="N/A" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="shovel-coal-mass" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="show-in-consist-menu" func="yes">
+			<Overload retVal="" descr="Boolean flag that dictates whether this train appears in the
+						consist menu (0 - false, 1 - true). The consist menu was
+						along the bottom of the screen in the original Trainz
+						and UTC but is no longer present. It effectively stopped
+						a user from getting access to an AI train. Redundant
+						for most uses except for legacy/scenario usage." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="showhelp" func="yes">
+			<Overload retVal="" descr="Show Driver Help. (off, on)" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="sideplay-permitted" func="yes">
+			<Overload retVal="" descr="Allows the bogie asset to move sideways to follow the
+						track rather than remaining fixed at its attachment point. 0 
+						(default) is no sideplay. 1 allows sideplay." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="signals" func="yes">
+			<Overload retVal="" descr="Sets out which aspects the signal is capable of displaying,
+						and also which light points are activated when each state
+						is displayed." >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="signals-ID" func="yes">
+			<Overload retVal="" descr="Signal point identifier." >
+				<Param name="subcontainer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="size" func="yes">
+			<Overload retVal="" descr="Size of queue." >
+				<Param name="integer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="sleeper-pitch" func="yes">
+			<Overload retVal="" descr="Number, distance from the center of a sleeper to the
+						next sleeper in meters. https://online.ts2009.com/mediaWiki/index.php/KIND_Procedural_track" >
+				<Param name="integer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="sleepers-orientation" func="yes">
+			<Overload retVal="" descr="The way the unified sleepers at the junction are oriented
+						by default. https://online.ts2009.com/mediaWiki/index.php/KIND_Procedural_track" >
+				<Param name="enumerated string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="smoke_fastlife" func="yes">
+			<Overload retVal="" descr="Longevity of smoke particles at normal speed." >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="smoke_fastspeed" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="smoke_height" func="yes">
+			<Overload retVal="" descr="How hard particles are pushed out of the stack." >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="smoke_random" func="yes">
+			<Overload retVal="" descr="Level of particle excitation." >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="smoke_shade" func="yes">
+			<Overload retVal="" descr="Smoke opacity. (0 - 1)" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="smoke_slowlife" func="yes">
+			<Overload retVal="" descr="Longevity of smoke particles at low speed." >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="smoken" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="snapgrid" func="yes">
+			<Overload retVal="" descr="Where n is a value in meters. This lets you
+						specify the size of the grid the object snaps to.
+						We recommend factors/fractions of 720 as this is the size of a
+						base board and the positioning may do funny things across
+						section borders. e.g. 1, 2, 5, 10, 20, 30,
+						40, 45, 60, 80, 90, 120, 180, 240, 360, 720.
+						The default snapgrid is 10." >
+				<Param name="float metres" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="snapmode" func="yes">
+			<Overload retVal="" descr="Where n is either 0 (default) , 1 or 2. Use
+						snapmode to enable snapping of a scenery object to the
+						snap grid. 0 will disable grid snapping (default), 1 will
+						enable grid snapping, 2 will enable an offset grid snapping.
+						Offset grid snapping will cause objects to be snapped to
+						the grid but will also offset the object’s position by ½ the grid size – essentially positioning the object in between the normal grid lines." >
+				<Param name="36527" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="sound" func="yes">
+			<Overload retVal="" descr="List of .wav files to play (randomly picked)" >
+				<Param name="subcontainer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="soundscript" func="yes">
+			<Overload retVal="" descr="Controls the looping sound made by the object." >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="spacing-length-after" func="yes">
+			<Overload retVal="" descr="A distance (meters, float, default 0) which is left empty
+						within each mesh repeat after the geometry. This spacing exists
+						within the 'mesh-length' leaving less available space for the actual mesh. https://online.ts2009.com/mediaWiki/index.php/Track_Part_Container" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="spacing-length-before" func="yes">
+			<Overload retVal="" descr="A distance (meters, float, default 0) which is left empty
+						within each mesh repeat before the geometry. https://online.ts2009.com/mediaWiki/index.php/Track_Part_Container" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="speed" func="yes">
+			<Overload retVal="" descr="Speed factor of the animation. Default 1, 2 for double
+						speed, 0.5 for half speed" >
+				<Param name="float" />
+			</Overload>
+			<Overload retVal="" descr="If it were used along with flash=1, I'd say it's flashing speed, but it's used in the company of light only, so I'm clueless https://online.ts2009.com/mediaWiki/index.php/KIND_MOSignal" >
+				<Param name="integer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="speedlimit" func="yes">
+			<Overload retVal="" descr="This value is the maximum speed allowed in meters per
+						second" >
+				<Param name="float metres/second" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="speedup" func="yes">
+			<Overload retVal="" descr="Controls the rate of pitch change for an electric type
+						enginesound. A value of 1.0 would mean the top
+						frequency used is as much again as the base frequency -
+						in other words, the frequency of the sound played would
+						double over the speed range of the vehicle. https://online.ts2009.com/mediaWiki/index.php/KIND_Enginesound" >
+				<Param name="decimal" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="spline-kuid" func="yes">
+			<Overload retVal="" descr="This KUID tag defines the asset type to use for
+						the child spline. A parent spline may have multiple children,
+						which may be of the same or differing types. https://online.ts2009.com/mediaWiki/index.php/%22attached-splines%22_container" >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="start" func="yes">
+			<Overload retVal="" descr="The usage of stard depends on the value of the
+						mode tag. If the mode is set to time, start
+						is a set of time values in seconds after the
+						creation of this effect’s parent object when this phase of the effect will
+						start. If the mode is set to speed, start is
+						a speed in meters per second (m/s) and period is not used. (Note: 1 m/s = 3.6 km/hr.) All other sequence attributes (rate, velocity, lifetime, minsize, maxsize)
+						are interpolated so there are smooth transitions between phases. If
+						the mode is set to anim, start is a value
+						from 0.0 to 1.0 which describes the start
+						time into the object’s animation cycle. If the mode is set to timeofday,
+						start is a value from 0.0 to 1.0
+						which describes the time of day when this effect will
+						start. Values range as follow: 0 - midnight, 0.25 - 6am,
+						0.5 - midday, 0.75 6pm, 1.0 - midnight." >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="start-enabled" func="yes">
+			<Overload retVal="" descr="Specifies whether the process starts enabled." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="start-gap" func="yes">
+			<Overload retVal="" descr="Defines the distance in meters between the start of the
+						spline and the start of the child's geometry, as measured along the path of the spline.
+						https://online.ts2009.com/mediaWiki/index.php/%22attached-splines%22_container" >
+				<Param name="integer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="startingtime" func="yes">
+			<Overload retVal="" descr="Time of day. Range is from 0 to 1 (0.5 - midday)." >
+				<Param name="0..1" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="steam" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="storm" func="yes">
+			<Overload retVal="" descr="Name of image file for stormy sky. File should be
+						256 x 256 pixel 24bit tga. The file extension should
+						be excluded here, ie “QLD_Sky” rather than &quot;qLD_Sky.texture.txt”." >
+				<Param name="[path/]filename.tga" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="string-table" func="yes">
+			<Overload retVal="" descr="The string table stores a list of text strings to
+						be used by the industry script." >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="string-table-c2" func="yes">
+			<Overload retVal="" descr="These alternative string tables store translated strings" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="string-table-cn" func="yes">
+			<Overload retVal="" descr="These alternative string tables store translated strings" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="string-table-cz" func="yes">
+			<Overload retVal="" descr="These alternative string tables store translated strings" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="string-table-da" func="yes">
+			<Overload retVal="" descr="These alternative string tables store translated strings" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="string-table-de" func="yes">
+			<Overload retVal="" descr="These alternative string tables store translated strings" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="string-table-es" func="yes">
+			<Overload retVal="" descr="These alternative string tables store translated strings" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="string-table-fi" func="yes">
+			<Overload retVal="" descr="These alternative string tables store translated strings" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="string-table-fr" func="yes">
+			<Overload retVal="" descr="These alternative string tables store translated strings" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="string-table-hu" func="yes">
+			<Overload retVal="" descr="These alternative string tables store translated strings" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="string-table-it" func="yes">
+			<Overload retVal="" descr="These alternative string tables store translated strings" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="string-table-jp" func="yes">
+			<Overload retVal="" descr="These alternative string tables store translated strings" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="string-table-kr" func="yes">
+			<Overload retVal="" descr="These alternative string tables store translated strings" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="string-table-nl" func="yes">
+			<Overload retVal="" descr="These alternative string tables store translated strings" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="string-table-no" func="yes">
+			<Overload retVal="" descr="These alternative string tables store translated strings" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="string-table-pl" func="yes">
+			<Overload retVal="" descr="These alternative string tables store translated strings" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="string-table-pt" func="yes">
+			<Overload retVal="" descr="These alternative string tables store translated strings" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="string-table-ru" func="yes">
+			<Overload retVal="" descr="These alternative string tables store translated strings" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="string-table-sv" func="yes">
+			<Overload retVal="" descr="These alternative string tables store translated strings" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="string-table-za" func="yes">
+			<Overload retVal="" descr="These alternative string tables store translated strings" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="subblend" func="yes">
+			<Overload retVal="" descr="God knows https://online.ts2009.com/mediaWiki/index.php/KIND_Texture" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="subdivisions" func="yes">
+			<Overload retVal="" descr="The subdivisions tag causes the current track part to be
+						subdivided into multiple parts, each of which is then passed
+						through the track-lod-tree. https://online.ts2009.com/mediaWiki/index.php/%22track-lod-tree%22_container" >
+				<Param name="integer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="subrotation" func="yes">
+			<Overload retVal="" descr="Even God doesn't know https://online.ts2009.com/mediaWiki/index.php/KIND_Texture" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="supports-null-driver-character" func="yes">
+			<Overload retVal="" descr="Command can be executed without a driver present in the
+						selected loco." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="surface-area" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="surveyor" func="yes">
+			<Overload retVal="" descr="A value of the context tag for a control container.
+						Key will activate in Surveyor, regardless of active tools https://online.ts2009.com/mediaWiki/index.php/Controls_container" >
+				<Param name="value for enum" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="surveyor-layers" func="yes">
+			<Overload retVal="" descr="A value of the context tag for a control container.
+						Key will activate in Surveyor while in layers edit mode
+						https://online.ts2009.com/mediaWiki/index.php/Controls_container" >
+				<Param name="value for enum" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="surveyor-name-label" func="yes">
+			<Overload retVal="" descr="Specifies whether this item has floating name label text." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="surveyor-objects" func="yes">
+			<Overload retVal="" descr="A value of the context tag for a control container.
+						Key will activate in Surveyor while in scenery edit modes 
+						(object placement, or scenery spline placement) https://online.ts2009.com/mediaWiki/index.php/Controls_container" >
+				<Param name="value for enum" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="surveyor-only" func="yes">
+			<Overload retVal="" descr="Adding this means the attached mesh will only be visible
+						in Surveyor and not Driver." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="surveyor-only" func="yes">
+			<Overload retVal="" descr="Adding this means the attached mesh will only be visible
+						in Surveyor and not Driver." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="surveyor-paint" func="yes">
+			<Overload retVal="" descr="A value of the context tag for a control container.
+						Key will activate in Surveyor while in terrain painting mode
+						https://online.ts2009.com/mediaWiki/index.php/Controls_container" >
+				<Param name="value for enum" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="surveyor-tools" func="yes">
+			<Overload retVal="" descr="A value of the context tag for a control container.
+						Key will activate in Surveyor while in tool edit mode 
+						(cameras, rulers, copy, paste, etc) https://online.ts2009.com/mediaWiki/index.php/Controls_container" >
+				<Param name="value for enum" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="surveyor-topology" func="yes">
+			<Overload retVal="" descr="A value of the context tag for a control container.
+						Key will activate in Surveyor while in topology editing mode
+						https://online.ts2009.com/mediaWiki/index.php/Controls_container" >
+				<Param name="value for enum" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="surveyor-track" func="yes">
+			<Overload retVal="" descr="A value of the context tag for a control container.
+						Key will activate in Surveyor while in track edit modes 
+						(track placement, trackside object placement, or trackmark placement) https://online.ts2009.com/mediaWiki/index.php/Controls_container" >
+				<Param name="value for enum" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="surveyor-trains" func="yes">
+			<Overload retVal="" descr="A value of the context tag for a control container.
+						Key will activate in Surveyor while in train/consist edit mode https://online.ts2009.com/mediaWiki/index.php/Controls_container" >
+				<Param name="value for enum" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="suspension-damping" func="yes">
+			<Overload retVal="" descr="Degree of suspension damping, where 0.0 to &lt; 1.0 is under-damped (will oscillate back and
+						forward to gradually settle), 1.0 is critically damped (will
+						move back to equilibrium as quickly as possible), &gt;1.0 is overdamped (will move back to equilibrium
+						more slowly). Defaults to 0.3. The value must be
+						positive. https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="suspension-pitch-limit" func="yes">
+			<Overload retVal="" descr="Maximum pitch angle of the vehicle, in degrees. Must be
+						positive. https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="suspension-roll-limit" func="yes">
+			<Overload retVal="" descr="Maximum roll angle of the vehicle, in degrees. Must be
+						positive. https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="suspension-stiffness" func="yes">
+			<Overload retVal="" descr="The stiffness of the suspension, from 0.0 to 1.0 where 0.0 is floppy and 1.0 is
+						completely rigid. Defaults to 0.75. https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="tail-lights" func="yes">
+			<Overload retVal="" descr="Lists the supported tail lights. https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="tender" func="yes">
+			<Overload retVal="" descr="Specifies that the traincar is a tender." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="terminator" func="yes">
+			<Overload retVal="" descr="Name of model to use at end of bridge, placed
+						in subfolder with same name." >
+				<Param name="folder" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="test-collisions" func="yes">
+			<Overload retVal="" descr="Mouse cannot be used for this mesh. Collision mesh used
+						instead. Ie animated-levers." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="texture" func="yes">
+			<Overload retVal="" descr="An image texture file." >
+				<Param name="[path/]filename.texture" />
+			</Overload>
+			<Overload retVal="" descr="Texture reference denoting the texture file to be swapped by
+						this effect." >
+				<Param name="[path]/filename.texture" />
+			</Overload>
+			<Overload retVal="" descr="Kuid of the texture to be used for the effect." >
+				<Param name="kuid" />
+			</Overload>
+			<Overload retVal="" descr="Specifies the asset to use as the decal texture. https://online.ts2009.com/mediaWiki/index.php/%22decal%22_Container" >
+				<Param name="kuid" />
+			</Overload>
+			<Overload retVal="" descr="Name of texture. Note that this is a texture file,
+						not an image file. https://online.ts2009.com/mediaWiki/index.php/KIND_Texture" >
+				<Param name="path to a file" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="texture-kuid" func="yes">
+			<Overload retVal="" descr="If the texture-kuid tag is not present the corona
+						will use the default yellow/orange texture in TRS." >
+				<Param name="&lt;blank&gt;" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="texture-kuid" func="yes">
+			<Overload retVal="" descr="Add this tag only when you want to specify your
+						own texture for the corona. It specifies the KUID of
+						a kind texture asset. See KIND TEXTURE." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="texture-rectangle" func="yes">
+			<Overload retVal="" descr="Specifies the top left and bottom right corners (percentage value,
+						0 to 1) of the area to use from the
+						texture asset. https://online.ts2009.com/mediaWiki/index.php/%22decal%22_Container" >
+				<Param name="List of decimals" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="texture-variants" func="yes">
+			<Overload retVal="" descr="The &quot;texture-variants&quot; container supplies one or more numbered texture variants, which
+						correspond to the seasons defined by the &quot;season-selector&quot; container. https://online.ts2009.com/mediaWiki/index.php/KIND_Groundtexture" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="textures" func="yes">
+			<Overload retVal="" descr="The textures container stores a list of additional textures to
+						be used in the texture group." >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="three-part" func="yes">
+			<Overload retVal="" descr="Specifies that the hornsound has a beginning, middle and ending
+						sound." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="throttle-notches" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="throttle-power" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="thumbnails" func="yes">
+			<Overload retVal="" descr="Any asset may specify a thumbnail or preview image." >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="timerate" func="yes">
+			<Overload retVal="" descr="Time progression. (1 - real-time, 2 - double speed etc.)" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="tni-library-name" func="yes">
+			<Overload retVal="" descr="Specifies a filename for a TrainzNativeInterface plugin DLL associated with
+						this asset. https://online.ts2009.com/mediaWiki/index.php/KIND_Library" >
+				<Param name="path to a file" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="tni-socket-templates" func="yes">
+			<Overload retVal="" descr="Specifies a list of socket templates for use within TNISocket
+						calls. https://online.ts2009.com/mediaWiki/index.php/KIND_Library" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="track" func="yes">
+			<Overload retVal="" descr="The &quot;track&quot; tag is compulsory and determines how the spline geometry
+						is formed from meshes. https://online.ts2009.com/mediaWiki/index.php/KIND_Track" >
+				<Param name="container" />
+			</Overload>
+			<Overload retVal="" descr="Kuid of the track to be used." >
+				<Param name="kuid" />
+			</Overload>
+			<Overload retVal="" descr="The track type to which this sound will apply" >
+				<Param name="kuid" />
+			</Overload>
+			<Overload retVal="" descr="The track name which the train must be on to
+						trigger." >
+				<Param name="trackID" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="track-attachment-threshold" func="yes">
+			<Overload retVal="" descr="Determines how closely the asset's attachment points need to match up with a track
+						vertex for them to attach. Too small, and minor discrepancies
+						can cause the MOSWT to detach from its tracks. Too
+						large, and it may attach to the wrong track vertex,
+						or may attach prematurely. Distance is in metres. (MOSWT = Mesh Object Scenery With Track) https://online.ts2009.com/mediaWiki/index.php/KIND_SceneryWithTrack" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="track-condition" func="yes">
+			<Overload retVal="" descr="Number, smoothness of the track, 0% (0) being terrible, 100% (1.0) being perfect. Without this tag, the track defaults
+						to 50% (0.5). https://online.ts2009.com/mediaWiki/index.php/KIND_Procedural_track" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="track-gauge" func="yes">
+			<Overload retVal="" descr="Number, distance between the inner faces of the running rails
+						in meters. https://online.ts2009.com/mediaWiki/index.php/KIND_Procedural_track" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="track-lod-tree" func="yes">
+			<Overload retVal="" descr="Used to select appropriate meshes for runtime mesh stitching. https://online.ts2009.com/mediaWiki/index.php/Track_Part_Container" >
+				<Param name="subcontainer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="track-parent" func="yes">
+			<Overload retVal="" descr="The parent (eg. bridge/industry/tunnel) of the track to which this sound will apply." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="track-sound" func="yes">
+			<Overload retVal="" descr="A sound asset that is referenced by track or bogeys
+						to play a different sound from the default track/train sound (for example when a train travels over a
+						bridge or through a tunnel)." >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="track-sound" func="yes">
+			<Overload retVal="" descr="The kuid of the tracksound object to be used." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="track-type" func="yes">
+			<Overload retVal="" descr="No information found, but this seems to be an important
+						one https://online.ts2009.com/mediaWiki/index.php/KIND_Procedural_track" >
+				<Param name="enumerated string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="trackdirections" func="yes">
+			<Overload retVal="" descr="Specifies the direction of traffic for each of the road
+						assets attached to the bridge," >
+				<Param name="float metres" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="trackmark" func="yes">
+			<Overload retVal="" descr="Specifies that the object is a trackmark." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="trackoffsets" func="yes">
+			<Overload retVal="" descr="Distance in meters the rail/s are attached to the center of the spline. Any
+						number of tracks can be attached to the spline, only
+						splines with the same track offsets can be connected together." >
+				<Param name="float[] listOfDistances" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="trackside" func="yes">
+			<Overload retVal="" descr="This is a value that is the distance in meters
+						the object is placed relative to the center of the
+						track. Negative values will put the object on the left
+						side of the track, and positive values will appear on
+						the right." >
+				<Param name="float metres" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="traffic-speed" func="yes">
+			<Overload retVal="" descr="If set (1), this boolean tag causes the spline to
+						be treated as a &quot;track&quot;, meaning that trains can be expected to run on
+						the spline. https://online.ts2009.com/mediaWiki/index.php/KIND_Track" >
+				<Param name="integer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="trainbrakepipe" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="trainbrakepipe_reservoir" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="trainbrakepipe_start" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="trainbrakepipevent" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="trainz-build" func="yes">
+			<Overload retVal="" descr="The Trainz build is the version number for which this
+						asset was created." >
+				<Param name="build code" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="trigger" func="yes">
+			<Overload retVal="" descr="Specifies that the object is a trigger." >
+				<Param name="boolean" />
+			</Overload>
+			<Overload retVal="" descr="A trigger may be used in an event file (.evt)
+						associated with an animation. It plays at selected key frames
+						of animation as defined in the event file. Sound files
+						may triggered in this manner, and from scripting. Used in
+						the mojunction example (switch lever) the “toggle” action is automatically triggered when the lever is operated and
+						the sound plays." >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="trigger-mode-analog" func="yes">
+			<Overload retVal="" descr="Sets the control as being for 'analog' use. For example, a throttle lever control, 
+						which has non-boolean input values. Requires a minimum trainz-build of 4.6. https://online.ts2009.com/mediaWiki/index.php/Controls_container" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="trigger-on-down" func="yes">
+			<Overload retVal="" descr="Whether the control event should trigger on key down. https://online.ts2009.com/mediaWiki/index.php/Controls_container" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="trigger-on-held" func="yes">
+			<Overload retVal="" descr="Whether the control event should repeatedly trigger while a key
+						remains held. https://online.ts2009.com/mediaWiki/index.php/Controls_container" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="trigger-on-up" func="yes">
+			<Overload retVal="" descr="Whether the control event should trigger on key up. https://online.ts2009.com/mediaWiki/index.php/Controls_container" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="tunnel-roof-height" func="yes">
+			<Overload retVal="" descr="Used by tunnels to determine the roof height in meters
+						allowed by the terrain hole. https://online.ts2009.com/mediaWiki/index.php/KIND_Track" >
+				<Param name="integer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="tunnelcamoffset" func="yes">
+			<Overload retVal="" descr="Defines the position of the camera, relative to the cab
+						viewpoint, when the vehicle is travelling in a tunnel. https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="array of decimals" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="turntable" func="yes">
+			<Overload retVal="" descr="Predefined submesh identifier" >
+				<Param name="mesh-table-ID" />
+			</Overload>
+			<Overload retVal="" descr="Predefined submesh identifier." >
+				<Param name="subcontainer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="two-part" func="yes">
+			<Overload retVal="" descr="Indicates that the Railyard and Driver hornsounds are different. The
+						Driver hornsound is looping. If this tag is not present,
+						the hornsound defauts to UTC equivalent non-looping format." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="type" func="yes">
+			<Overload retVal="" descr="Specifies the classification type, with three options (timetabled, extra, following).
+						https://online.ts2009.com/mediaWiki/index.php/Classification-signals_container" >
+				<Param name="enumerated string" />
+			</Overload>
+			<Overload retVal="" descr="Specify a type for the model that will be used
+						in the Surveyor menu drop down menu for Track or
+						Object type." >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="uncached_alphas" func="yes">
+			<Overload retVal="" descr="This is used in certain situations to improve alpha sorting.
+						This should only be set to 1 for tracks that
+						use an alpha texture and are always placed flat" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="unit_mesh" func="yes">
+			<Overload retVal="" descr="For mesh-reducing track, the filename of the long mesh,
+						which must be placed in a subdirectory of the same
+						name as the mesh. Only the file name is entered,
+						not the directory name nor the file extension. For example,
+						the full pathname and extension is “rockwall/rockwall.im”. Enter only “rockwall” in the text input box." >
+				<Param name="folder" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="upright" func="yes">
+			<Overload retVal="" descr="Specifies whether the bridge “legs” point vertically, or perpendicular to the spline." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="use-coupler-sounds" func="yes">
+			<Overload retVal="" descr="Enables or disables the coupler slack sounds for this specific
+						vehicle. https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="use-gradient-track" func="yes">
+			<Overload retVal="" descr="This means to use the spline gradient rather than following
+						the ground height." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="use-named-track" func="yes">
+			<Overload retVal="" descr="The use-named-track tag allows a script to refer
+						to the names of the internal tracks (as defined in
+						the attached track table) to start searches. https://online.ts2009.com/mediaWiki/index.php/KIND_Fixedtrack" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="use-parent-bounds" func="yes">
+			<Overload retVal="" descr="Specifies that the mesh should use the bounds of the
+						parent object for visibility culling. Use with caution." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="use-same-direction" func="yes">
+			<Overload retVal="" descr="If set (1), this boolean tag causes the child spline
+						to face in the same direction as the parent If
+						clear (0), the child faces backward (180° rotation) to the parent. https://online.ts2009.com/mediaWiki/index.php/%22attached-splines%22_container" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="useadjoiningtracktype" func="yes">
+			<Overload retVal="" descr="Indicates whether the track type should change to match that
+						of the first track joined to the object." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="username" func="yes">
+			<Overload retVal="" descr="The human-readable English name of this asset." >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="username-##" func="yes">
+			<Overload retVal="" descr="The human-readable translated name of this asset." >
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="vacuumbrakecylinder" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="vacuumbrakecylinder_start" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="vacuumbrakecylinder_vacuumbrakepipe" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="vacuumbrakepipe" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="vacuumbrakepipe_start" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="vacuumbrakepipereleasevent" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="vacuumbrakepipevent" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="vacuumbrakereservoir" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="vacuumbrakereservoir_start" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="vacuumbrakereservoir_vacuumbrakepipe" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="value-range" func="yes">
+			<Overload retVal="" descr="2 numbers, currently used only for day/night sound effects.
+						Midnight is 0.5, midday = 0.0 or 1.0 Where the numbers are not
+						the same, this sets the start and end times for
+						the sound to play. Default 0,0 (off)" >
+				<Param name="float minTimeOfDay" />
+				<Param name="float maxTimeOfDay" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="vehicle" func="yes">
+			<Overload retVal="" descr="The kuid of the vehicle to be used." >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="vehicle-running-numbers" func="yes">
+			<Overload retVal="" descr="Defines the behaviour of automatic random running-number generation. https://online.ts2009.com/mediaWiki/index.php/KIND_Traincar" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="velocity" func="yes">
+			<Overload retVal="" descr="The initial speed of emitted smoke particles. Default is 1." >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="vertices" func="yes">
+			<Overload retVal="" descr="Attachment points at which to place track." >
+				<Param name="subcontainer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="visibility-radius" func="yes">
+			<Overload retVal="" descr="The radius of this mesh (in meters), for visibility and
+						collision purposes. https://online.ts2009.com/mediaWiki/index.php/KIND_Mesh" >
+				<Param name="integer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="visible-on-minimap" func="yes">
+			<Overload retVal="" descr="Specifies whether the object\track is displayed on the minimap." >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="visual-only" func="yes">
+			<Overload retVal="" descr="If set (1), this boolean tag causes the child spline
+						to exist only while being actively rendered. https://online.ts2009.com/mediaWiki/index.php/%22attached-splines%22_container" >
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="volume" func="yes">
+			<Overload retVal="" descr="Gain of the sound Default 1.0 = 100%" >
+				<Param name="0..1" />
+			</Overload>
+			<Overload retVal="" descr="N/A" >
+				<Param name="container" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="water" func="yes">
+			<Overload retVal="" descr="Undocumented" >
+				<Param name="kuid" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="water-injector-rate" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="watercolor" func="yes">
+			<Overload retVal="" descr="RGB color value of the water for the region." >
+				<Param name="rgb value" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="wave-shift" func="yes">
+			<Overload retVal="" descr="Affects the flashing intensity pattren on the corona." >
+				<Param name="N/A" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="weather" func="yes">
+			<Overload retVal="" descr="Weather setting. (clear, cloudy, drizzle, rain, stormy, light snow, medium
+						snow, heavy snow)" >
+				<Param name="0..7" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="westinghouse-volume" func="yes">
+			<Overload retVal="" descr="N/A" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="width" func="yes">
+			<Overload retVal="" descr="Width of track mesh in meters." >
+				<Param name="float metres" />
+			</Overload>
+			<Overload retVal="" descr="Image width" >
+				<Param name="integer" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="wingrail-body-length" func="yes">
+			<Overload retVal="" descr="Number, length of the ‘body’ section of the wing rail in meters. This is the
+						straight part, not including the flared end. https://online.ts2009.com/mediaWiki/index.php/KIND_Procedural_track" >
+				<Param name="float" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="workingscale" func="yes">
+			<Overload retVal="" descr="Undocumented" >
+				<Param name="N/A" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="workingunits" func="yes">
+			<Overload retVal="" descr="Undocumented" >
+				<Param name="N/A" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="world-origin" func="yes">
+			<Overload retVal="" descr="Latitude, longitude, and altitude" >
+				<Param name="float list" />
+			</Overload>
+		</KeyWord>
+	</AutoComplete>
+</NotepadPlus>
